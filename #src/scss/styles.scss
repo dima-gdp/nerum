@@ -5,6 +5,9 @@
 @import "_modal.scss";
 @import "_polit-modal.scss";
 
+@import "components/catalog.scss";
+@import "components/lookbook.scss";
+
 // header ==================================================================================
 
 .header {
@@ -15,6 +18,9 @@
 		align-items: center;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		position: relative;
+		z-index: 3;
+		background-color: #ffffff;
 	}
 	// .header__logo
 	&__logo {
@@ -74,6 +80,7 @@
 		left: 0;
 		width: 100%;
 		padding: 61px 0;
+		z-index: 2;
 		&--active {
 			top: 100%;
 		}
@@ -301,40 +308,6 @@
 	&__item {
 	}
 }
-.card {
-	display: flex;
-	flex-direction: column;
-	padding-bottom: 15px;
-	// .card__image
-	&__image {
-		margin-bottom: 15px;
-		position: relative;
-		overflow: hidden;
-		padding-bottom: 131%;
-		img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-			font-family: "object-fit: cover; object-position: center;";
-		}
-	}
-	// .card__type
-	&__type {
-		margin-bottom: 10px;
-		font-size: 14px;
-		line-height: lh(17, 14);
-		color: #c5a995;
-	}
-	// .card__title
-	&__title {
-		color: #000;
-		line-height: lh(22, 18);
-	}
-}
 
 // Best =================================================================================================
 .best {
@@ -360,10 +333,9 @@
 	flex-wrap: wrap;
 	// .tabs-best__item
 	&__item {
-		flex: 1 0 200px;
 		margin-right: 20px;
 		margin-bottom: 18px;
-		padding: 10px 15px;
+		padding: 10px 17px;
 		min-height: 40px;
 		border-radius: 60px;
 		border: 1px solid #c5a995;
@@ -392,9 +364,77 @@
 	// .cards-best__column
 	&__column {
 		padding: 0 17px;
+		flex: 0 0 25%;
 	}
 	// .cards-best__item
 	&__item {
+		height: 100%;
+	}
+}
+
+// about ==================================================================================================
+
+.about {
+	// .about__container
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 6.3%;
+	}
+	// .about__content
+	&__content {
+		max-width: 509px;
+		margin-right: 40px;
+	}
+	// .about__title
+	&__title {
+		margin-bottom: 67px;
+		margin-top: 30px;
+	}
+	// .about__subtitile
+	&__subtitile {
+		margin-bottom: 80px;
+		p {
+			line-height: 1.5;
+			color: #000;
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+	// .about__link
+	&__link {
+		font-weight: 600;
+		color: #8290a7;
+	}
+	// .about__decor
+	&__decor {
+		flex: 0 1 768px;
+	}
+}
+
+.decor-about {
+	position: relative;
+	min-height: 1010px;
+	// .decor-about__text
+	&__text {
+		position: absolute;
+		bottom: 70px;
+		left: 0;
+		width: 481px;
+		height: 480px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		animation: circle 30s linear infinite;
+	}
+	// .decor-about__image
+	&__image {
+		height: 100%;
+		margin-left: 90px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 }
 
@@ -408,6 +448,7 @@
 		justify-content: space-between;
 		padding-top: 102px;
 		padding-bottom: 116px;
+		margin-top: 139px;
 		max-width: 1440px;
 	}
 	// .ss__title
@@ -441,10 +482,22 @@
 		border-bottom: 1px solid #8290a7;
 	}
 	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 10px;
+		font-size: 12px;
+		line-height: lh(15, 12);
+		text-transform: uppercase;
 		flex: 1 0 200px;
 		min-height: 56px;
 		background: #8290a7;
 		color: #ffffff;
+		transition: all 0.3s;
+		&:hover {
+			background: #c5a995;
+		}
 	}
 }
 
@@ -462,7 +515,7 @@
 		display: flex;
 		align-items: center;
 		margin-bottom: 93px;
-		padding-left: 124px;
+		// padding-left: 124px;
 	}
 	// .footer__logo
 	&__logo {
@@ -470,32 +523,33 @@
 	}
 	// .footer__decor
 	&__decor {
-		flex: 0 0 1180px;
+		flex: 1 1 auto;
 		height: 156px;
 		margin-right: calc((100vw - 100%) / -2);
-		overflow: hidden;
+	}
+	&__abv {
 		position: relative;
+		overflow: hidden;
 	}
 	&__moving {
-		position: absolute;
-		top: 0;
-		left: 0;
 		width: 100%;
-		height: 100%;
-		background: url("../img/path.svg") 0 0 / cover no-repeat;
-		// animation-name: logo;
-		animation-duration: 9s;
+		animation-name: logo;
+		animation-duration: 15s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
 		&--helper {
-			left: auto;
-			right: 100%;
+			position: absolute;
+			top: -1px;
+			right: calc(100% - 1px);
+			width: 100%;
+			height: 100%;
+			// padding-right: 100%;
 		}
 	}
 	// .footer__content
 	&__content {
 		display: flex;
-		padding-left: 124px;
+		// padding-left: 124px;
 	}
 	// .footer__info
 	&__info {

@@ -2,11 +2,35 @@ $(document).ready(function () {
 	objectFitImages();
 
 	const searchBtn = $('.header__search-btn');
+	const filterBtn = $('.bar__filter-btn');
+	const sortBtn = $('.bar__sort-btn');
+
+	$(document).click(function (ev) {
+
+		if (!ev.target.closest('.bar')) {
+			$('.filter-bar').removeClass('filter-bar--active');
+			$('.sort-bar').removeClass('sort-bar--active')
+
+		}
+	})
+
+	filterBtn.on('click', function(){
+		$('.filter-bar').toggleClass('filter-bar--active');
+	});
+
+	sortBtn.on('click', function(){
+		sortBtn.toggleClass('bar__sort-btn--active');
+		$('.sort-bar').toggleClass('sort-bar--active');
+	});
 
 	searchBtn.on('click', function(){
 		searchBtn.toggleClass('header__search-btn--close');
 		$('.header__form').toggleClass('header__form--active');
 	});
+
+	$('#to-privacy').on('click', function(ev){
+		ev.preventDefault()
+	})
 
 	const slider_hero = new Swiper('.slider-hero', {
 
@@ -45,14 +69,14 @@ $(document).ready(function () {
 	// 	});
 	// });
 
-	// $("#to-privacy").on('click', function () {
-	// 	$.fancybox.open({
-	// 		src: '#modal-polit',
-	// 		touch: 'false',
-	// 		smallBtn: false,
-	// 		buttons: '',
-	// 	});
-	// });
+	$("#to-privacy").on('click', function () {
+		$.fancybox.open({
+			src: '#modal-polit',
+			touch: 'false',
+			smallBtn: false,
+			buttons: '',
+		});
+	});
 
 	// Input-mask
 	// $('input[type="tel"]').inputmask({ "mask": "+7 (999)-999-99-99" });
