@@ -4,14 +4,20 @@ $(document).ready(function () {
 	const searchBtn = $('.header__search-btn');
 	const filterBtn = $('.bar__filter-btn');
 	const sortBtn = $('.bar__sort-btn');
+	const midSliders = document.querySelectorAll('.slider-mid__container');
 
 	$(document).click(function (ev) {
 
-		if (!ev.target.closest('.bar')) {
+		if (!ev.target.closest('.bar__filter-btn') && !ev.target.closest('.filter-bar')) {
 			$('.filter-bar').removeClass('filter-bar--active');
-			$('.sort-bar').removeClass('sort-bar--active')
-
 		}
+
+
+		if (!ev.target.closest('.bar__sort-btn') && !ev.target.closest('.sort-bar')) {
+			sortBtn.removeClass('bar__sort-btn--active');
+		$('.sort-bar').removeClass('sort-bar--active');
+		}
+
 	})
 
 	filterBtn.on('click', function(){
@@ -30,6 +36,12 @@ $(document).ready(function () {
 
 	$('#to-privacy').on('click', function(ev){
 		ev.preventDefault()
+	})
+
+	$('.tab-info__top').on('click', function(ev){
+		let text = $(this).next('.tab-info__bot');
+		$(this).toggleClass('tab-info__top--active')
+		text.slideToggle();
 	})
 
 	const slider_hero = new Swiper('.slider-hero', {
@@ -57,6 +69,56 @@ $(document).ready(function () {
 		// 	},
 		// }
 	});
+
+	const sliderProductMain = new Swiper('.slider-product', {
+
+		slidesPerView: 1,
+		observer: true,
+		observeParents: true,
+		loop: false,
+		breakpoints: {
+			577: {
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true
+				},
+			}
+		}
+	});
+
+	midSliders.forEach(function (el) {
+
+		const slider_1 = new Swiper(el, {
+
+			slidesPerView: 4,
+			spaceBetween: 40,
+			observer: true,
+			observeParents: true,
+			observeSlideChildren: true,
+			loop: false,
+			navigation: {
+				nextEl: el.closest('.slider-mid__wrapper').querySelector('.slider-mid__btn-next'),
+				prevEl: el.closest('.slider-mid__wrapper').querySelector('.slider-mid__btn-prev'),
+			},
+			// breakpoints: {
+			// 	320: {
+			// 		slidesPerView: 1,
+			// 	},
+			// 	653: {
+			// 		slidesPerView: 2,
+			// 	},
+			// 	1130: {
+			// 		slidesPerView: 3,
+			// 	},
+			// 	1340: {
+			// 		slidesPerView: 4,
+			// 		spaceBetween: 30,
+			// 	}
+			// }
+		});
+	})
+
 
 
 	// Fancy-box

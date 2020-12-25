@@ -40,6 +40,14 @@ body {
 	width: 100%;
 }
 
+.help-img {
+	visibility: hidden;
+	opacity: 0;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 .btn-brown {
 	display: flex;
 	align-items: center;
@@ -64,6 +72,10 @@ body {
 	font-size: 48px;
 	line-height: lh(60, 48);
 	color: #000000;
+	&--24 {
+		font-size: 24px;
+		line-height: lh(29, 24);
+	}
 }
 
 .card {
