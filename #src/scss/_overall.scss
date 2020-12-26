@@ -54,12 +54,17 @@ body {
 	justify-content: center;
 	text-align: center;
 	padding: 10px;
-	font-size: 12px;
-	line-height: lh(15, 12);
+	font-size: 16px;
+	line-height: lh(20, 16);
 	text-transform: uppercase;
 	background: #c5a995;
+	color: #ffffff;
 	transition: all 0.3s;
 	cursor: pointer;
+	&--s {
+		font-size: 12px;
+		line-height: lh(15, 12);
+	}
 	&:hover {
 		color: #000000;
 		background: #ffffff;

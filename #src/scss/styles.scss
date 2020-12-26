@@ -10,6 +10,9 @@
 @import "components/product.scss";
 @import "components/contacts.scss";
 @import "components/info.scss";
+@import "components/lb-single.scss";
+@import "components/descr.scss";
+@import "components/modal-size.scss";
 // header ==================================================================================
 
 .header {
@@ -47,6 +50,10 @@
 		font-size: 16px;
 		line-height: lh(20, 16);
 		color: #000000;
+		transition: color 0.3s;
+		&:hover {
+			color: #c5a995;
+		}
 	}
 	// .header__btn
 	&__btn {
@@ -105,6 +112,10 @@
 		font-size: 16px;
 		line-height: lh(20, 16);
 		color: #000;
+		transition: color 0.3s;
+		&:hover {
+			color: #c5a995;
+		}
 		&--current {
 			color: #c5a995;
 		}
@@ -115,8 +126,25 @@
 	align-items: center;
 
 	&__item {
+		svg path {
+			transition: fill 0.3s;
+		}
 		&:not(:last-child) {
 			margin-right: 15px;
+		}
+	}
+	.vk {
+		&:hover {
+			path {
+				fill: #8290a7;
+			}
+		}
+	}
+	.inst {
+		&:hover {
+			path {
+				fill: #8290a7;
+			}
 		}
 	}
 }
@@ -127,8 +155,14 @@
 
 	// .tels__item
 	&__item {
+		svg path {
+			transition: fill 0.3s;
+		}
 		&:not(:last-child) {
 			margin-right: 11px;
+		}
+		&:hover svg path {
+			fill: #8290a7;
 		}
 	}
 }
@@ -142,6 +176,7 @@
 		line-height: lh(15, 12);
 		color: #000000;
 		position: relative;
+		cursor: pointer;
 		&:not(:last-child) {
 			margin-right: 20px;
 		}
@@ -382,6 +417,7 @@
 		display: flex;
 		justify-content: space-between;
 		padding-top: 6.3%;
+		padding-bottom: 133px;
 	}
 	// .about__content
 	&__content {
@@ -408,6 +444,7 @@
 	&__link {
 		font-weight: 600;
 		color: #8290a7;
+		text-decoration: underline;
 	}
 	// .about__decor
 	&__decor {
@@ -449,8 +486,8 @@
 		align-items: center;
 		justify-content: space-between;
 		padding-top: 102px;
-		padding-bottom: 116px;
-		margin-top: 139px;
+		// padding-bottom: 116px;
+		padding-bottom: 138px;
 		max-width: 1440px;
 	}
 	// .ss__title
@@ -582,6 +619,10 @@
 		font-size: 20px;
 		line-height: 1.5;
 		color: #c5a995;
+		transition: color 0.3s;
+		&:hover {
+			color: #8290a7;
+		}
 	}
 	// .info-footer__rights
 	&__rights {
@@ -627,6 +668,10 @@
 		color: #ffffff;
 		font-size: 16px;
 		line-height: lh(30, 16);
+		transition: color 0.3s;
+		&:hover {
+			color: #c5a995;
+		}
 	}
 	// .menu-footer__phones
 	&__phones {
@@ -640,6 +685,10 @@
 		font-size: 18px;
 		line-height: 1.67;
 		color: #ffffff;
+		transition: color 0.3s;
+		&:hover {
+			color: #c5a995;
+		}
 	}
 	// .menu-footer__tels
 	&__tels {

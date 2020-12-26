@@ -1,6 +1,7 @@
 .contacts {
 	// .contacts__container
 	&__container {
+		padding-bottom: 133px;
 	}
 	// .contacts__title
 	&__title {
@@ -18,7 +19,7 @@
 		display: flex;
 		flex-direction: column;
 		h2 {
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			font-size: 18px;
 			font-weight: 700;
 			line-height: 1.5;
@@ -26,18 +27,18 @@
 			color: #8290a7;
 		}
 		p {
-			margin-bottom: 30px;
+			margin-bottom: 24px;
 			font-size: 18px;
 			line-height: 1.5;
 		}
 		a[href^="mailto:"] {
-			margin-bottom: 30px;
+			margin-bottom: 24px;
 			font-size: 18px;
 			text-decoration: underline;
 			color: #000000;
 		}
 		a[href^="tel:"] {
-			margin-bottom: 30px;
+			margin-bottom: 24px;
 			font-size: 18px;
 			font-weight: 700;
 			color: #000000;

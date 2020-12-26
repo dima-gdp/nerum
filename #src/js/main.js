@@ -140,6 +140,15 @@ $(document).ready(function () {
 		});
 	});
 
+	$("#to-size").on('click', function () {
+		$.fancybox.open({
+			src: '#modal-size',
+			touch: 'false',
+			smallBtn: false,
+			buttons: '',
+		});
+	});
+
 	// Input-mask
 	// $('input[type="tel"]').inputmask({ "mask": "+7 (999)-999-99-99" });
 
@@ -168,6 +177,31 @@ $(document).ready(function () {
 	// 	}
 	// })
 
+	if (document.getElementById('map')) {
+		 
+		ymaps.ready(function () {
+			var myMap = new ymaps.Map('map', {
+				center: [52.05693880953456,118.68705543322154],
+				zoom: 4
+			});
+		
+			var myPlacemark = new ymaps.Placemark([55.54055193739615,108.71146949572154], {
+				hintContent: 'г. Борисоглебск, ул. Победы, д. 66',
+				balloonContent: 'г. Борисоглебск, ул. Победы, д. 66'
+			},
+			{
+				preset: 'islands#redIcon',
+				iconLayout: 'default#image',
+				iconImageHref: '../img/marker.svg',
+				iconImageSize: [20, 28],
+				iconImageOffset: [-19, -52]
+			});
+		
+			myMap.geoObjects.add(myPlacemark);
+		});
+	}
+
+	
 
 
 });

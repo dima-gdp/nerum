@@ -1,12 +1,14 @@
 .product {
 	// .product__container
 	&__container {
-		padding-top: 45px;
-		padding-bottom: 122px;
 	}
 	&__top {
 		display: flex;
 		margin-bottom: 108px;
+		padding-top: 45px;
+	}
+	&__mid {
+		padding-bottom: 66px;
 	}
 	// .product__slider
 	&__slider {
@@ -16,12 +18,15 @@
 	&__info {
 	}
 	&__slider-mid {
-		margin-bottom: 67px;
+		&:not(:last-child) {
+			margin-bottom: 67px;
+		}
 	}
 	// .product__comments
 	&__comments {
 		padding-top: 58px;
 		border-top: 1px solid #e5e5e5;
+		padding-bottom: 124px;
 	}
 }
 
@@ -37,7 +42,7 @@
 	}
 
 	.swiper-pagination {
-		bottom: 40px;
+		bottom: 36px;
 	}
 
 	.swiper-pagination-bullet {
@@ -77,13 +82,13 @@
 		line-height: lh(20, 16);
 		color: #000000;
 		p {
-			margin-bottom: 30px;
+			margin-bottom: 22px;
 		}
 	}
 	// .info-product__live
 	&__live {
 		padding-left: 25px;
-		margin-bottom: 53px;
+		margin-bottom: 57px;
 		font-weight: bold;
 		font-size: 14px;
 		line-height: lh(17, 14);
@@ -126,7 +131,7 @@
 	}
 	.breadcrumbs {
 		margin-top: 0;
-		margin-bottom: 25px;
+		margin-bottom: 22px;
 	}
 }
 
@@ -222,6 +227,9 @@
 
 .comments-product {
 	// .comments-product__title
+	&__container {
+		max-width: 1040px;
+	}
 	&__title {
 		margin-bottom: 73px;
 	}
@@ -240,15 +248,30 @@
 	}
 	// .comments-product__rating
 	&__rating {
+		display: flex;
+		flex-direction: row-reverse;
 		margin-right: 46px;
 		margin-left: auto;
+	}
 
-		& .active {
+	&__star {
+		&:not(:last-child) {
+			margin-left: 7px;
+		}
+
+		&.active {
+			path {
+				fill: #c5a995;
+			}
+		}
+
+		&.active ~ .comments-product__star {
 			path {
 				fill: #c5a995;
 			}
 		}
 	}
+
 	// .comments-product__rec
 	&__rec {
 		line-height: (22, 18);
@@ -261,20 +284,20 @@
 	// .comments-product__item
 	&__item {
 		&:not(:last-child) {
-			margin-bottom: 58px;
+			margin-bottom: 62px;
 		}
 	}
 	// .comments-product__name
 	&__name {
-		margin-bottom: 40px;
-		font-weight: bold;
+		margin-bottom: 26px;
+		font-weight: 700;
 		line-height: lh(22, 18);
 		color: #000000;
 	}
 	// .comments-product__text
 	&__text {
 		font-size: 16px;
-		line-height: (26, 16);
+		line-height: lh(26, 16);
 	}
 	// .comments-product__more
 	&__more {

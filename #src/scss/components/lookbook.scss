@@ -1,6 +1,7 @@
 .lookbook {
 	// .lookbook__container
 	&__container {
+		padding-bottom: 133px;
 	}
 	// .lookbook__title
 	&__title {
@@ -18,7 +19,7 @@
 	// .lookbook__column
 	&__column {
 		&:nth-child(3n-1) {
-			padding-top: 40px;
+			padding-top: 57px;
 		}
 	}
 	// .lookbook__item
