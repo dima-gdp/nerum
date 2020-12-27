@@ -1,5 +1,8 @@
 $(document).ready(function () {
 	objectFitImages();
+	// AOS.init({
+	// 	duration: 1500
+	// });
 
 	const searchBtn = $('.header__search-btn');
 	const filterBtn = $('.bar__filter-btn');
@@ -76,6 +79,7 @@ $(document).ready(function () {
 		observer: true,
 		observeParents: true,
 		loop: false,
+		mousewheel: true,
 		breakpoints: {
 			577: {
 				pagination: {
@@ -149,6 +153,19 @@ $(document).ready(function () {
 		});
 	});
 
+	$(".to-cart").on('click', function (ev) {
+		ev.preventDefault();
+		$.fancybox.open({
+			src: '#modal-cart',
+			touch: 'false',
+			smallBtn: false,
+			buttons: '',
+			afterShow: function( ) {
+				$('.ellipse').removeClass('ellipse--active')
+			}
+		});
+	});
+
 	// Input-mask
 	// $('input[type="tel"]').inputmask({ "mask": "+7 (999)-999-99-99" });
 
@@ -199,6 +216,52 @@ $(document).ready(function () {
 		
 			myMap.geoObjects.add(myPlacemark);
 		});
+	}
+
+	// Анимация карточки
+
+	if(document.querySelector('.card__image')){
+
+		$('body').mousemove(function(event){
+			if (event.target.dataset.image) {
+				var x = event.clientX;
+				var y = event.clientY;
+
+				$('.cursor').css('transform', `translate(${x}px, ${y}px)`);
+
+				if(!$('.ellipse').hasClass('ellipse--active')){
+					$('.ellipse').addClass('ellipse--active')
+				}
+			}
+			else {
+				if($('.ellipse').hasClass('ellipse--active')){
+					$('.ellipse').removeClass('ellipse--active')
+				}
+			}
+
+			
+		});
+	
+	// 	$('.card__image').mouseover(function(event){
+	// 		$('.ellipse').addClass('ellipse--active')
+	// });
+	
+	// 	$('.card__image').mouseout(function(event){
+	// 			$('.ellipse').removeClass('ellipse--active');
+	// 			console.log(event.relatedTarget)
+	// 	});
+	
+	// 	$('.to-cart').mouseover(function(event){
+	// 		event.stopPropagation()
+	// 		$('.ellipse').removeClass('ellipse--active')
+	// });
+	
+	// 	$('.to-cart').mouseout(function(event){
+	// 		event.stopPropagation()
+	// 			$('.ellipse').addClass('ellipse--active')
+	// 	});
+
+
 	}
 
 	

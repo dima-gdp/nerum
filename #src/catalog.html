@@ -13,7 +13,11 @@
 <body>
 	<div class="wrapper">
 		@@include('header.html')
-		@@include('modal-polit.html')
+		@@include('modal-cart.html')
+		<div class="cursor">
+			<div class="ellipse">смотерть</div>
+		</div>
+	
 		<main class="main">
 			<div class="breadcrumbs container">
 				<a href="#" class="breadcrumbs-link">Главная</a>
@@ -83,8 +87,8 @@
 								 <div class="catalog__column">
 									<a href="#" class="catalog__item card">
 										<div class="card__image">
-											<img src="img/card-1.jpg" alt="">
-											<div id="to-privacy" class="card__to-cart to-cart">
+											<img src="img/card-1.jpg" data-image="cursor" alt="">
+											<div class="card__to-cart to-cart">
 												<span class="to-cart__icon" style="background-image: url('img/cart-big.svg');"></span>
 												<span class="to-cart__text">В корзину</span> 
 											</div>
@@ -96,7 +100,7 @@
 								 <div class="catalog__column">
 									<a href="#" class="catalog__item card">
 										<div class="card__image">
-											<img src="img/card-1.jpg" alt="">
+											<img src="img/card-1.jpg" data-image="cursor" alt="">
 											<div class="card__to-cart to-cart" >
 												<span class="to-cart__icon" style="background-image: url('img/cart-big.svg');"></span>
 												<span class="to-cart__text">В корзину</span> 
@@ -109,7 +113,7 @@
 								 <div class="catalog__column">
 									<a href="#" class="catalog__item card">
 										<div class="card__image">
-											<img src="img/card-1.jpg" alt="">
+											<img src="img/card-1.jpg" data-image="cursor" alt="">
 											<div class="card__to-cart to-cart" >
 												<span class="to-cart__icon" style="background-image: url('img/cart-big.svg');"></span>
 												<span class="to-cart__text">В корзину</span> 
@@ -122,7 +126,7 @@
 								 <div class="catalog__column">
 									<a href="#" class="catalog__item card">
 										<div class="card__image">
-											<img src="img/card-1.jpg" alt="">
+											<img src="img/card-1.jpg" alt="" data-image="cursor">
 											<div class="card__to-cart to-cart" >
 												<span class="to-cart__icon" style="background-image: url('img/cart-big.svg');"></span>
 												<span class="to-cart__text">В корзину</span> 
@@ -135,7 +139,7 @@
 								 <div class="catalog__column">
 									<a href="#" class="catalog__item card">
 										<div class="card__image">
-											<img src="img/card-1.jpg" alt="">
+											<img src="img/card-1.jpg" data-image="cursor" alt="">
 											<div class="card__to-cart to-cart" >
 												<span class="to-cart__icon" style="background-image: url('img/cart-big.svg');"></span>
 												<span class="to-cart__text">В корзину</span> 
@@ -148,7 +152,7 @@
 								 <div class="catalog__column">
 									<a href="#" class="catalog__item card">
 										<div class="card__image">
-											<img src="img/card-1.jpg" alt="">
+											<img src="img/card-1.jpg" data-image="cursor" alt="">
 											<div class="card__to-cart to-cart" >
 												<span class="to-cart__icon" style="background-image: url('img/cart-big.svg');"></span>
 												<span class="to-cart__text">В корзину</span> 
