@@ -64,6 +64,12 @@
 		line-height: lh(20, 16);
 		text-transform: uppercase;
 		color: #000000;
+		transition: color 0.3s;
+		cursor: pointer;
+		&:hover {
+			color: #c5a995;
+		}
+
 		span {
 			margin-left: 14px;
 			width: 10px;
@@ -100,6 +106,10 @@
 		line-height: lh(19, 16);
 		&:not(:last-child) {
 			margin-bottom: 20px;
+		}
+		transition: color 0.3s;
+		&:hover {
+			color: #c5a995;
 		}
 	}
 

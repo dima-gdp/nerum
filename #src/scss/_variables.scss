@@ -12,3 +12,8 @@ $minwidth: 320px;
 @function lh($value, $base) {
 	@return $value / $base;
 }
+
+@mixin adaptiv($property, $startSize, $minSize, $max-width, $min-width) {
+	$addSize: $startSize - $minSize;
+	#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - #{$min-width}) / #{$max-width - #{$min-width}}));
+}

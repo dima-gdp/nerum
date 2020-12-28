@@ -2,6 +2,7 @@
 @import "_variables.scss";
 @import "_reset.scss";
 @import "_overall.scss";
+@import "_burger.scss";
 @import "_modal.scss";
 @import "_polit-modal.scss";
 
@@ -23,6 +24,7 @@
 	&__container {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		padding-top: 15px;
 		padding-bottom: 15px;
 		position: relative;
@@ -138,14 +140,14 @@
 	.vk {
 		&:hover {
 			path {
-				fill: #8290a7;
+				fill: #c5a995;
 			}
 		}
 	}
 	.inst {
 		&:hover {
 			path {
-				fill: #8290a7;
+				fill: #c5a995;
 			}
 		}
 	}
@@ -164,7 +166,7 @@
 			margin-right: 11px;
 		}
 		&:hover svg path {
-			fill: #8290a7;
+			fill: #c5a995;
 		}
 	}
 }
@@ -248,6 +250,7 @@
 		margin-right: 40px;
 		padding-top: 80px;
 		padding-bottom: 80px;
+		padding-right: 40px;
 		display: flex;
 		justify-content: flex-end;
 		background: url("../img/hero.jpg") center / cover no-repeat;
@@ -333,8 +336,8 @@
 .grid-second {
 	display: grid;
 	grid-template-columns: 680px 320px 320px;
-	grid-template-rows: repeat(auto-fit, minmax(510px, 1fr));
-	grid-column-gap: 38px;
+	grid-template-rows: repeat(auto-fit, minmax(510px, auto));
+	grid-column-gap: 40px;
 	grid-row-gap: 20px;
 	// .grid-second__column
 	&__column {
@@ -578,19 +581,24 @@
 		animation-duration: 15s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
+		animation-direction: reverse;
 		&--helper {
 			position: absolute;
 			top: -1px;
 			right: calc(100% - 1px);
 			width: 100%;
 			height: 100%;
-			// padding-right: 100%;
+
+			// @media (max-width: 1800px) {
+			// 	top: -1px;
+			// 	right: calc(100% + 1px);
+			// }
 		}
 	}
 	// .footer__content
 	&__content {
 		display: flex;
-		// padding-left: 124px;
+		justify-content: space-between;
 	}
 	// .footer__info
 	&__info {
@@ -692,9 +700,12 @@
 			color: #c5a995;
 		}
 	}
+	&__social {
+		margin-bottom: 49px;
+	}
 	// .menu-footer__tels
 	&__tels {
-		margin-bottom: 69px;
+		margin-bottom: 10px;
 		svg path {
 			fill: #ffffff;
 		}

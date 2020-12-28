@@ -9,6 +9,9 @@ $(document).ready(function () {
 	const sortBtn = $('.bar__sort-btn');
 	const midSliders = document.querySelectorAll('.slider-mid__container');
 
+
+if (document.querySelector('.bar')) {
+
 	$(document).click(function (ev) {
 
 		if (!ev.target.closest('.bar__filter-btn') && !ev.target.closest('.filter-bar')) {
@@ -21,11 +24,15 @@ $(document).ready(function () {
 		$('.sort-bar').removeClass('sort-bar--active');
 		}
 
+	})
+}
+
+	$(document).click(function (ev) {
+
 		if (!ev.target.closest('.header')) {
 			searchBtn.removeClass('header__search-btn--close');
 			$('.header__form').removeClass('header__form--active');
 		}
-		console.log(ev.target)
 
 	})
 

@@ -1,0 +1,248 @@
+@media (max-width: 1716px) {
+	.header__social {
+		display: none;
+	}
+
+	.hero__title {
+		font-size: calc(60px + (88 - 60) * ((100vw - 1200px) / (1696 - 1200)));
+	}
+}
+
+@media (max-width: 1600px) {
+	.header__btn {
+		display: none;
+	}
+	.header__tels {
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 1440px) {
+	.header__control {
+		margin-right: 35px;
+	}
+	.header__search-btn {
+		margin-right: 20px;
+	}
+	.header__nav {
+		margin-right: 30px;
+	}
+	.nav__item:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	.footer__info {
+		margin-right: calc(65px + (151 - 65) * ((100vw - 1200px) / (1440 - 1200)));
+	}
+	.footer__menu {
+		max-width: none;
+	}
+	.grid-second {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		grid-template-rows: repeat(auto-fit, minmax(510px, 1fr));
+		grid-column-gap: 40px;
+		grid-row-gap: 20px;
+	}
+	.grid-second__column:first-child {
+		grid-row-start: span 1;
+		grid-column-start: span 2;
+	}
+}
+
+@media (max-width: 1250px) {
+	.burger {
+		display: flex;
+	}
+	.header__nav {
+		display: none;
+	}
+	.header__social {
+		display: flex;
+		margin-left: auto;
+	}
+	.header__tels {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.footer__container {
+		padding-top: calc(40px + (100 - 40) * ((100vw - 320px) / (1200 - 320)));
+		padding-bottom: calc(40px + (100 - 40) * ((100vw - 320px) / (1200 - 320)));
+	}
+	.footer__top {
+		margin-bottom: 50px;
+	}
+	.footer__info {
+		display: flex;
+		justify-content: space-between;
+		margin-right: 0;
+		order: 1;
+		max-width: none;
+	}
+	.footer__menu {
+		flex: 0 0 100%;
+		margin-bottom: 70px;
+	}
+	.footer__content {
+		flex-direction: column;
+	}
+	.info-footer__rights {
+		max-width: 320px;
+	}
+	.info-footer__contacts {
+		margin-bottom: 0;
+	}
+	.footer__decor {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media (max-width: 992px) {
+	.header__social {
+		margin-right: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header__social {
+		display: none;
+	}
+	.burger {
+		margin-right: 25px;
+	}
+	.header__logo {
+		margin-right: 28px;
+	}
+	.header__tel {
+		margin-right: 20px;
+		font-size: 15px;
+	}
+	.header__tels {
+		margin-left: auto;
+	}
+	.header__control {
+		margin-right: 25px;
+	}
+
+	.footer__menu {
+		flex-direction: column;
+		align-items: center;
+	}
+	.menu-footer__column:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+	.menu-footer__column {
+		text-align: center;
+	}
+	.menu-footer__tels {
+		justify-content: center;
+	}
+	.menu-footer__social {
+		justify-content: center;
+	}
+	.footer__info {
+		flex-direction: column;
+		align-items: center;
+	}
+	.info-footer__rights {
+		text-align: center;
+	}
+
+	.info-footer__contacts {
+		margin-bottom: 40px;
+	}
+	.menu-footer__title {
+		margin-bottom: 10px;
+	}
+	.menu-footer__social {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 576px) {
+	.header__tel {
+		display: none;
+	}
+	.header__tels {
+		display: none;
+	}
+	.header__control {
+		margin-left: auto;
+	}
+	.burger {
+		margin-right: 60px;
+	}
+	.footer__decor {
+		display: none;
+	}
+	.footer__logo {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 420px) {
+	.header__container {
+		justify-content: space-between;
+	}
+	.burger {
+		width: 30px;
+		height: 22px;
+		margin-right: 0;
+	}
+
+	.header__lang {
+		display: none;
+	}
+	.header__control {
+		margin-right: 0;
+		margin-left: 10px;
+	}
+	.header__logo {
+		margin-right: 0;
+		margin-left: 48px;
+	}
+	.footer__top {
+		margin-bottom: 25px;
+	}
+	.info-footer__contacts {
+		margin-bottom: 15px;
+	}
+	.info-footer__adress {
+		margin-bottom: 10px;
+		font-size: 15px;
+	}
+	.info-footer__mail {
+		font-size: 16px;
+	}
+	.rights-footer__item {
+		font-size: 10px;
+	}
+	.rights-footer__item:not(:last-child) {
+		margin-bottom: 5px;
+	}
+	.menu-footer__tel {
+		font-size: 16px;
+	}
+	.menu-footer__phones {
+		margin-bottom: 15px;
+	}
+	.menu-footer__social {
+		margin-bottom: 20px;
+	}
+	.menu-footer__column:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.menu-footer__title {
+		font-size: 17px;
+	}
+	.menu-footer__link {
+		font-size: 15px;
+	}
+	.footer__menu {
+		margin-bottom: 40px;
+	}
+}

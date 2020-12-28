@@ -38,6 +38,10 @@
 			line-height: lh(20, 16);
 			text-transform: uppercase;
 			color: #000000;
+			transition: color 0.3s;
+			&:hover {
+				color: #c5a995;
+			}
 
 			&.current {
 				color: #c5a995;

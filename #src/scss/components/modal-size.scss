@@ -57,11 +57,15 @@
 		text-transform: uppercase;
 		color: #000000;
 	}
+	&__table-wrapper {
+		overflow-x: auto;
+	}
 	// .modal-size__table
 	&__table {
 		margin-bottom: 49px;
 		border-collapse: collapse;
 		width: 100%;
+		min-width: 420px;
 		th {
 			padding: 15px 20px;
 			font-size: 16px;
