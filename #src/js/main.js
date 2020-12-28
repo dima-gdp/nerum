@@ -21,6 +21,12 @@ $(document).ready(function () {
 		$('.sort-bar').removeClass('sort-bar--active');
 		}
 
+		if (!ev.target.closest('.header')) {
+			searchBtn.removeClass('header__search-btn--close');
+			$('.header__form').removeClass('header__form--active');
+		}
+		console.log(ev.target)
+
 	})
 
 	filterBtn.on('click', function(){
@@ -163,6 +169,24 @@ $(document).ready(function () {
 			afterShow: function( ) {
 				$('.ellipse').removeClass('ellipse--active')
 			}
+		});
+	});
+
+	$(".info-product__btn").on('click', function (ev) {
+		$.fancybox.open({
+			src: '#modal-cart',
+			touch: 'false',
+			smallBtn: false,
+			buttons: ''
+		});
+	});
+
+	$(".comments-product__btn").on('click', function (ev) {
+		$.fancybox.open({
+			src: '#modal-comment',
+			touch: 'false',
+			smallBtn: false,
+			buttons: ''
 		});
 	});
 

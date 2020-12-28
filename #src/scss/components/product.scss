@@ -116,6 +116,7 @@
 		line-height: lh(20, 16);
 		text-decoration-line: underline;
 		color: #000000;
+		cursor: pointer;
 	}
 	// .info-product__color
 	&__color {
@@ -204,7 +205,8 @@
 		width: 20px;
 		height: 20px;
 		position: absolute;
-		top: 50%;
+		top: calc(50% - 15px);
+		transform: translateY(-50%);
 		background: url("../img/slider-mid-arrow.svg") center / contain no-repeat;
 		z-index: 1;
 		cursor: pointer;
@@ -218,7 +220,7 @@
 	// .slider-hero__btn-next
 	&__btn-next {
 		right: -34px;
-		transform: rotate(180deg);
+		transform: translateY(-50%) rotate(180deg);
 	}
 	.swiper-button-disabled {
 		display: none;

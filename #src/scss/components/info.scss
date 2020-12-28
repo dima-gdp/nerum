@@ -102,12 +102,15 @@
 			counter-reset: info;
 			list-style-type: none;
 			li {
-				display: flex;
+				position: relative;
+				padding-left: 30px;
 			}
 			li::before {
 				counter-increment: info;
 				content: counter(info) ".";
-				min-width: 30px;
+				position: absolute;
+				top: 0;
+				left: 0;
 				font-size: 18px;
 				color: #000000;
 			}

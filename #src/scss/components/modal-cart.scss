@@ -1,3 +1,53 @@
 .modal-cart {
 	display: none;
+	max-width: 900px;
+	width: 100%;
+	padding: 70px 0px 70px 0px;
+	// .modal-cart__container
+	&__container {
+		max-width: 683px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	// .modal-cart__content
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+	// .modal-cart__title
+	&__title {
+		margin-bottom: 66px;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: lh(44, 36);
+		text-align: center;
+		text-transform: uppercase;
+		color: #000000;
+	}
+	// .modal-cart__link
+	&__link {
+		margin-bottom: 38px;
+		min-height: 101px;
+		font-size: 24px;
+		line-height: lh(29, 24);
+	}
+	// .modal-cart__close
+	&__close {
+		min-height: 101px;
+		padding: 10px 15px;
+		font-size: 24px;
+		line-height: lh(29, 24);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		text-transform: uppercase;
+		background: #c4c4c4;
+		cursor: pointer;
+		transition: all 0.3s;
+		&:hover {
+			background: #c5a995;
+			color: #ffffff;
+		}
+	}
 }
