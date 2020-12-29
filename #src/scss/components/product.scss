@@ -134,6 +134,10 @@
 		margin-top: 0;
 		margin-bottom: 22px;
 	}
+	// .info-product__quantity
+	&__quantity {
+		margin-bottom: 66px;
+	}
 }
 
 .checkbox-product {
@@ -309,5 +313,75 @@
 		text-decoration-line: underline;
 		text-transform: uppercase;
 		color: #8290a7;
+	}
+}
+
+.quantity {
+	// .quantity__title
+	&__title {
+		margin-bottom: 22px;
+		font-size: 16px;
+		color: #000000;
+	}
+	// .quantity__control
+	&__control {
+		display: flex;
+		align-items: center;
+	}
+	// .quantity__minus
+	&__minus {
+		margin-right: 15px;
+		width: 14px;
+		height: 14px;
+		position: relative;
+		background-color: transparent;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 6px;
+			left: 0;
+			width: 14px;
+			height: 2px;
+			background: #000000;
+		}
+	}
+	// .quantity__input
+	&__input {
+		width: 86px;
+		height: 35px;
+		background: #ffffff;
+		border: 1px solid #000000;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		color: #000000;
+	}
+	// .quantity__plus
+	&__plus {
+		margin-left: 15px;
+		width: 14px;
+		height: 14px;
+		position: relative;
+		background-color: transparent;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 6px;
+			left: 0;
+			width: 14px;
+			height: 2px;
+			background: #000000;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 6px;
+			width: 2px;
+			height: 14px;
+			background: #000000;
+		}
 	}
 }

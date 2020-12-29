@@ -8,6 +8,21 @@ $(document).ready(function () {
 	const filterBtn = $('.bar__filter-btn');
 	const sortBtn = $('.bar__sort-btn');
 	const midSliders = document.querySelectorAll('.slider-mid__container');
+	const quantityInput = $('.quantity__input');
+	let quantity = +quantityInput.val();
+	
+	$('.quantity__minus').click(function(){
+		if (quantity > 1){
+			quantity = quantity - 1;
+			quantityInput.val(quantity)
+		}
+	})
+	$('.quantity__plus').click(function(){
+		if (quantity < 999 ){
+			quantity = quantity + 1;
+			quantityInput.val(quantity)
+		}
+	})
 
 
 if (document.querySelector('.bar')) {
@@ -68,22 +83,28 @@ if (document.querySelector('.bar')) {
 			nextEl: '.slider-hero__btn-next',
 			prevEl: '.slider-hero__btn-prev',
 		},
-		// breakpoints: {
-		// 	320: {
-		// 		slidesPerView: 1,
-		// 		spaceBetween: 31,
-
-		// 	},
-		// 	769: {
-		// 		slidesPerView: 2,
-		// 		spaceBetween: 25,
-
-		// 	},
-		// 	993: {
-		// 		slidesPerView: 2,
-		// 		spaceBetween: 31,
-		// 	},
-		// }
+		breakpoints: {
+			370: {
+				slidesPerView: 1,
+				spaceBetween: 0,
+			},
+			371: {
+				slidesPerView: 2,
+				spaceBetween: 12,
+			},
+			421: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			577: {
+				slidesPerView: 2,
+				spaceBetween: 40,
+			},
+			993: {
+				slidesPerView: 1,
+				spaceBetween: 0,
+			},
+		}
 	});
 
 	const sliderProductMain = new Swiper('.slider-product', {

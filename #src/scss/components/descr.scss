@@ -26,10 +26,13 @@
 		}
 	}
 	// .descr__image
-	&__image {
+	&__right {
 		flex: 0 0 558px;
 		position: relative;
-		overflow: hidden;
+	}
+	&__image {
+		position: relative;
+		padding-bottom: 116%;
 		img {
 			position: absolute;
 			top: 0;

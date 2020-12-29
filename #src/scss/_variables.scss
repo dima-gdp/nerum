@@ -15,5 +15,5 @@ $minwidth: 320px;
 
 @mixin adaptiv($property, $startSize, $minSize, $max-width, $min-width) {
 	$addSize: $startSize - $minSize;
-	#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - #{$min-width}) / #{$max-width - #{$min-width}}));
+	#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - #{$min-width + px}) / (#{$max-width - #{$min-width}})));
 }
