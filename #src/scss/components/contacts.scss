@@ -10,7 +10,7 @@
 	// .contacts__grid
 	&__grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(384px, auto));
+		grid-template-columns: repeat(3, 1fr);
 		grid-column-gap: 96px;
 		grid-row-gap: 40px;
 	}

@@ -15,7 +15,7 @@
 	}
 	// .lb-single__left
 	&__left {
-		flex: 1 1 auto;
+		flex: 0 0 50%;
 		padding: 0 20px;
 	}
 	// .lb-single__image-main
@@ -47,7 +47,7 @@
 	}
 	// .lb-single__right
 	&__right {
-		flex: 0 0 720px;
+		flex: 0 0 50%;
 		padding: 102px 20px 0px 20px;
 		.lb-single__text {
 			margin-left: auto;
@@ -56,7 +56,7 @@
 	// .lb-single__images
 	&__images {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, 320px);
+		grid-template-columns: repeat(2, 1fr);
 		grid-column-gap: 40px;
 		grid-row-gap: 30px;
 		margin: 144px 0px 157px 0px;
