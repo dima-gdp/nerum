@@ -88,5 +88,22 @@
 	&__btn {
 		min-height: 101px;
 		font-size: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 10px;
+		line-height: lh(20, 16);
+		text-transform: uppercase;
+		background: #c5a995;
+		color: #ffffff;
+		transition: all 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			color: #000000;
+			background: #ffffff;
+			border: 1px solid #c5a995;
+		}
 	}
 }

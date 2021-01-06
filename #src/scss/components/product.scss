@@ -85,6 +85,51 @@
 		p {
 			margin-bottom: 22px;
 		}
+		ul,
+		ol {
+			margin-bottom: 23px;
+			li {
+				// font-size: 18px;
+				line-height: 1.5;
+				color: #000000;
+				&:not(:last-child) {
+					margin-bottom: 15px;
+				}
+			}
+		}
+
+		ul li {
+			position: relative;
+			padding-left: 30px;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 10px;
+				left: 0;
+				width: 4px;
+				height: 4px;
+				border-radius: 100%;
+				background-color: #000000;
+				overflow: hidden;
+			}
+		}
+		ol {
+			counter-reset: info;
+			list-style-type: none;
+			li {
+				position: relative;
+				padding-left: 30px;
+			}
+			li::before {
+				counter-increment: info;
+				content: counter(info) ".";
+				position: absolute;
+				top: 0;
+				left: 0;
+				font-size: 18px;
+				color: #000000;
+			}
+		}
 	}
 	// .info-product__live
 	&__live {

@@ -6,6 +6,9 @@
 	.hero__title {
 		font-size: calc(60px + (88 - 60) * ((100vw - 1200px) / (1696 - 1200)));
 	}
+	.modal-comment__textarea {
+		height: 320px;
+	}
 }
 
 @media (max-width: 1600px) {
@@ -155,6 +158,16 @@
 	.type-style ol li::before {
 		@include adaptiv(font-size, 18, 14, 1440, 320);
 	}
+
+	.info-product__text ul li {
+		@include adaptiv(padding-left, 30, 15, 1440, 320);
+	}
+	.info-product__text ol li {
+		@include adaptiv(padding-left, 30, 15, 1440, 320);
+	}
+	.info-product__text ol li::before {
+		@include adaptiv(font-size, 18, 14, 1440, 320);
+	}
 	.info__title {
 		@include adaptiv(margin-bottom, 73, 20, 1440, 320);
 	}
@@ -188,6 +201,27 @@
 	.catalog__title {
 		@include adaptiv(margin-bottom, 59, 20, 1440, 320);
 	}
+	.catalog__container {
+		@include adaptiv(padding-bottom, 136, 40, 1440, 320);
+	}
+	.modal-cart {
+		@include adaptiv(padding-bottom, 70, 30, 1440, 320);
+		@include adaptiv(padding-top, 70, 30, 1440, 320);
+	}
+	.modal-cart__title {
+		@include adaptiv(margin-bottom, 66, 15, 1440, 320);
+		@include adaptiv(font-size, 36, 16, 1440, 320);
+	}
+	.modal-cart__link {
+		@include adaptiv(margin-bottom, 38, 10, 1440, 320);
+		@include adaptiv(font-size, 24, 13, 1440, 320);
+	}
+	.modal-cart__close {
+		@include adaptiv(font-size, 24, 13, 1440, 320);
+	}
+	.modal-comment__btn {
+		@include adaptiv(font-size, 24, 13, 1440, 320);
+	}
 	.lb-single__images {
 		grid-column-gap: 30px;
 	}
@@ -195,6 +229,20 @@
 		grid-column-gap: 30px;
 		grid-row-gap: 40px;
 		@include adaptiv(margin-bottom, 82, 20, 1440, 320);
+	}
+	.modal-size__title {
+		@include adaptiv(margin-bottom, 73, 15, 1440, 320);
+		@include adaptiv(font-size, 36, 16, 1440, 320);
+	}
+	.modal-size__table {
+		@include adaptiv(margin-bottom, 49, 15, 1440, 320);
+	}
+	.modal-comment__title {
+		@include adaptiv(margin-bottom, 54, 15, 1440, 320);
+		@include adaptiv(font-size, 36, 16, 1440, 320);
+	}
+	.modal-comment__textarea {
+		@include adaptiv(margin-bottom, 57, 15, 1440, 320);
 	}
 }
 
@@ -298,9 +346,9 @@
 	.descr__right {
 		flex: 0 0 50%;
 	}
-	.descr__content p {
-		font-size: 17px;
-	}
+	// .descr__content p {
+	// 	font-size: 17px;
+	// }
 	.title--24 {
 		font-size: 22px;
 	}
@@ -416,6 +464,15 @@
 		margin-bottom: 15px;
 		font-size: 15px;
 	}
+	.modal-cart__link {
+		min-height: 70px;
+	}
+	.modal-cart__close {
+		min-height: 70px;
+	}
+	.modal-comment__btn {
+		min-height: 70px;
+	}
 }
 @media (max-width: 1200px) and (min-width: 993px) {
 	.catalog__grid .card__type {
@@ -443,9 +500,9 @@
 	.about__title {
 		margin-top: 0;
 	}
-	.about__subtitile p {
-		font-size: 16px;
-	}
+	// .about__subtitile p {
+	// 	font-size: 16px;
+	// }
 	.decor-about {
 		min-height: 680px;
 	}
@@ -457,10 +514,10 @@
 	.ss__form {
 		padding-right: 0;
 	}
-	.descr__content p {
-		font-size: 16px;
-		margin-bottom: 15px;
-	}
+	// .descr__content p {
+	// 	font-size: 16px;
+	// 	margin-bottom: 15px;
+	// }
 	.descr__right {
 		flex: 0 0 35%;
 	}
@@ -798,6 +855,26 @@
 	.catalog__aside {
 		display: none;
 	}
+	.modal-cart__link {
+		min-height: 60px;
+	}
+	.modal-cart__close {
+		min-height: 60px;
+	}
+	.modal-comment__btn {
+		min-height: 60px;
+	}
+	.modal-size__table th {
+		padding: 15px 15px;
+		font-size: 15px;
+	}
+	.modal-size__table td {
+		padding: 15px 15px;
+		font-size: 15px;
+	}
+	.modal-size__text {
+		font-size: 15px;
+	}
 }
 
 @media (max-width: 576px) {
@@ -832,10 +909,10 @@
 		width: 100%;
 		max-width: none;
 	}
-	.descr__content p {
-		font-size: 15px;
-		margin-bottom: 10px;
-	}
+	// .descr__content p {
+	// 	font-size: 15px;
+	// 	margin-bottom: 10px;
+	// }
 	.grid-second {
 		grid-column-gap: 20px;
 		grid-row-gap: 15px;
@@ -990,6 +1067,38 @@
 	.filter-bar__column:not(:last-child) {
 		margin-right: 50px;
 	}
+	.modal-cart__link {
+		min-height: 50px;
+	}
+	.modal-cart__close {
+		min-height: 50px;
+	}
+	.modal-comment__btn {
+		min-height: 50px;
+	}
+	.modal-size__table th {
+		padding: 10px 10px;
+		font-size: 14px;
+	}
+	.modal-size__table td {
+		padding: 10px 10px;
+		font-size: 14px;
+	}
+	.modal-size__text {
+		font-size: 14px;
+	}
+	.modal-comment__input {
+		margin-bottom: 20px;
+		padding: 10px 15px 10px 15px;
+		font-size: 15px;
+	}
+	.modal-comment__textarea {
+		padding: 10px 15px 10px 15px;
+		font-size: 15px;
+	}
+	.modal-comment__textarea {
+		height: 220px;
+	}
 }
 
 @media (max-width: 420px) {
@@ -1099,9 +1208,9 @@
 		padding: 6px 10px;
 		min-height: 30px;
 	}
-	.about__subtitile p {
-		font-size: 15px;
-	}
+	// .about__subtitile p {
+	// 	font-size: 15px;
+	// }
 	.about__link {
 		font-size: 16px;
 	}
@@ -1185,6 +1294,9 @@
 	}
 	.checkbox-filter__box {
 		margin-right: 10px;
+	}
+	.modal-comment__input {
+		margin-bottom: 15px;
 	}
 }
 
