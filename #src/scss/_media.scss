@@ -54,6 +54,9 @@
 	.title {
 		@include adaptiv(font-size, 48, 24, 1440, 320);
 	}
+	.type-style h1 {
+		@include adaptiv(font-size, 48, 24, 1440, 320);
+	}
 	.best__title {
 		@include adaptiv(margin-bottom, 50, 15, 1440, 320);
 	}
@@ -135,6 +138,10 @@
 	}
 	.content-info__title {
 		@include adaptiv(margin-bottom, 45, 15, 1440, 320);
+	}
+	.type-style h2 {
+		@include adaptiv(font-size, 24, 16, 1440, 320);
+		@include adaptiv(margin-bottom, 23, 15, 1440, 320);
 	}
 	.type-style h3 {
 		@include adaptiv(font-size, 18, 15, 1440, 320);
@@ -243,6 +250,38 @@
 	}
 	.modal-comment__textarea {
 		@include adaptiv(margin-bottom, 57, 15, 1440, 320);
+	}
+}
+
+@media (max-width: 1300px) and (min-width: 769px) {
+	.cards-best__item .card__to-cart {
+		width: 100px;
+		height: 100px;
+		bottom: 10px;
+		right: 10px;
+	}
+	.cards-best__item .to-cart__text {
+		margin-top: 9px;
+		font-size: 11px;
+	}
+	.cards-best__item .to-cart__icon {
+		width: 24px;
+		height: 27px;
+	}
+
+	.slider-mid__container .card__to-cart {
+		width: 100px;
+		height: 100px;
+		bottom: 10px;
+		right: 10px;
+	}
+	.slider-mid__container .to-cart__text {
+		margin-top: 9px;
+		font-size: 11px;
+	}
+	.slider-mid__container .to-cart__icon {
+		width: 24px;
+		height: 27px;
 	}
 }
 
@@ -396,10 +435,9 @@
 	.info-product__btn {
 		min-height: 62px;
 		width: 245px;
-	}
-	.btn-brown {
 		font-size: 15px;
 	}
+
 	.slider-product .swiper-pagination-bullet {
 		width: 40px;
 	}
@@ -481,6 +519,13 @@
 	}
 	.catalog__grid .card__title {
 		font-size: 16px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.to-cart {
+		visibility: visible;
+		opacity: 1;
 	}
 }
 
@@ -591,17 +636,16 @@
 	.info-product__help {
 		font-size: 14px;
 	}
-	.btn-brown {
-		font-size: 14px;
-	}
 	.info-product__btn {
 		min-height: 45px;
 		width: 225px;
+		font-size: 14px;
 	}
 	.comments-product__btn {
 		margin-right: 20px;
 		min-height: 50px;
 		width: 210px;
+		font-size: 14px;
 	}
 	.comments-product__rec {
 		font-size: 16px;
@@ -875,6 +919,28 @@
 	.modal-size__text {
 		font-size: 15px;
 	}
+
+	.type-style table th,
+	.type-style table td {
+		padding: 15px 15px;
+	}
+}
+
+@media (max-width: 650px) and (min-width: 470px) {
+	.card__to-cart {
+		width: 100px;
+		height: 100px;
+		bottom: 10px;
+		right: 10px;
+	}
+	.to-cart__text {
+		margin-top: 9px;
+		font-size: 11px;
+	}
+	.to-cart__icon {
+		width: 24px;
+		height: 27px;
+	}
 }
 
 @media (max-width: 576px) {
@@ -974,6 +1040,10 @@
 	.comments-product__btn {
 		order: 2;
 		margin: 0;
+		font-size: 13px;
+	}
+	.info-product__btn {
+		font-size: 13px;
 	}
 	.comments-product__name {
 		margin-bottom: 10px;
@@ -983,9 +1053,6 @@
 	}
 	.slider-mid__title {
 		margin-bottom: 20px;
-	}
-	.btn-brown {
-		font-size: 13px;
 	}
 	.product__slider {
 		margin-bottom: 20px;
@@ -1099,6 +1166,43 @@
 	.modal-comment__textarea {
 		height: 220px;
 	}
+	.type-style table th,
+	.type-style table td {
+		padding: 10px 10px;
+	}
+}
+
+@media (max-width: 470px) and (min-width: 371px) {
+	.card__to-cart {
+		width: 70px;
+		height: 70px;
+		bottom: 6px;
+		right: 6px;
+	}
+	.to-cart__text {
+		margin-top: 6px;
+		font-size: 8px;
+	}
+	.to-cart__icon {
+		width: 16px;
+		height: 18px;
+	}
+}
+@media (max-width: 520px) and (min-width: 371px) {
+	.slider-mid__container .card__to-cart {
+		width: 70px;
+		height: 70px;
+		bottom: 6px;
+		right: 6px;
+	}
+	.slider-mid__container .to-cart__text {
+		margin-top: 6px;
+		font-size: 8px;
+	}
+	.slider-mid__container .to-cart__icon {
+		width: 16px;
+		height: 18px;
+	}
 }
 
 @media (max-width: 420px) {
@@ -1208,9 +1312,6 @@
 		padding: 6px 10px;
 		min-height: 30px;
 	}
-	// .about__subtitile p {
-	// 	font-size: 15px;
-	// }
 	.about__link {
 		font-size: 16px;
 	}
@@ -1221,10 +1322,12 @@
 		margin-bottom: 5px;
 		font-size: 16px;
 	}
-	.btn-brown {
+	.info-product__btn {
 		font-size: 12px;
 	}
-
+	.comments-product__btn {
+		font-size: 12px;
+	}
 	.comments-product__rec {
 		font-size: 15px;
 	}
@@ -1339,5 +1442,19 @@
 	}
 	.catalog__grid {
 		grid-template-columns: 1fr;
+	}
+	.card__to-cart {
+		width: 100px;
+		height: 100px;
+		bottom: 10px;
+		right: 10px;
+	}
+	.to-cart__text {
+		margin-top: 9px;
+		font-size: 11px;
+	}
+	.to-cart__icon {
+		width: 24px;
+		height: 27px;
 	}
 }

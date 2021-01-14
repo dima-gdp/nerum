@@ -29,7 +29,7 @@
 		padding-top: 15px;
 		padding-bottom: 15px;
 		position: relative;
-		z-index: 3;
+		z-index: 5;
 		background-color: #ffffff;
 	}
 	// .header__logo
@@ -94,7 +94,7 @@
 		left: 0;
 		width: 100%;
 		padding: 61px 0;
-		z-index: 2;
+		z-index: 4;
 		&--active {
 			top: 100%;
 		}

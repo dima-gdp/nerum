@@ -144,7 +144,7 @@ $(document).ready(function () {
 				320: {
 					slidesPerView: 1,
 				},
-				374: {
+				371: {
 					slidesPerView: 2,
 					spaceBetween: 12,
 				},
@@ -263,25 +263,29 @@ $(document).ready(function () {
 
 	if (document.querySelector('.card__image')) {
 
-		$('body').mousemove(function (event) {
-			if (event.target.dataset.image) {
-				var x = event.clientX;
-				var y = event.clientY;
+		if ($(window).outerWidth() > 1024) {
+			$('body').mousemove(function (event) {
+				if (event.target.dataset.image) {
+					var x = event.clientX;
+					var y = event.clientY;
 
-				$('.cursor').css('transform', `translate(${x}px, ${y}px)`);
+					$('.cursor').css('transform', `translate(${x}px, ${y}px)`);
 
-				if (!$('.ellipse').hasClass('ellipse--active')) {
-					$('.ellipse').addClass('ellipse--active')
+					if (!$('.ellipse').hasClass('ellipse--active')) {
+						$('.ellipse').addClass('ellipse--active')
+					}
 				}
-			}
-			else {
-				if ($('.ellipse').hasClass('ellipse--active')) {
-					$('.ellipse').removeClass('ellipse--active')
+				else {
+					if ($('.ellipse').hasClass('ellipse--active')) {
+						$('.ellipse').removeClass('ellipse--active')
+					}
 				}
-			}
 
 
-		});
+			});
+		}
+
+
 
 		// 	$('.card__image').mouseover(function(event){
 		// 		$('.ellipse').addClass('ellipse--active')
@@ -307,31 +311,34 @@ $(document).ready(function () {
 
 	// Мобильное меню
 
+	const mobMenuMoving = $('.mob-menu__moving');
+	const mobMenuContainer = $('.mob-menu__container');
+
 	$('.top-nav__link').click(function (ev) {
 		ev.preventDefault()
 		$(ev.target).next('.submenu').addClass('submenu--active')
-		$('.mob-menu__moving').addClass('transform')
-		$('.mob-menu__container').scrollTop(0)
+		mobMenuMoving.addClass('transform')
+		mobMenuContainer.scrollTop(0)
 	})
 
 	$('.submenu__back').click(function (ev) {
 		ev.preventDefault()
 		$(ev.target).closest('.submenu__header').closest('.submenu').removeClass('submenu--active')
-		if ($('.mob-menu__moving').hasClass('transform-200')) {
-			$('.mob-menu__moving').removeClass('transform-200')
+		if (mobMenuMoving.hasClass('transform-200')) {
+			mobMenuMoving.removeClass('transform-200')
 		}
 		else {
-			$('.mob-menu__moving').removeClass('transform')
+			mobMenuMoving.removeClass('transform')
 		}
-		$('.mob-menu__container').scrollTop(0)
+		mobMenuContainer.scrollTop(0)
 
 	})
 
 	$('.submenu-drop').click(function (ev) {
 		ev.preventDefault()
 		$(ev.target).next('.submenu').addClass('submenu--active')
-		$('.mob-menu__moving').addClass('transform-200')
-		$('.mob-menu__container').scrollTop(0)
+		mobMenuMoving.addClass('transform-200')
+		mobMenuContainer.scrollTop(0)
 	})
 
 
