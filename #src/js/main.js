@@ -166,15 +166,15 @@ $(document).ready(function () {
 
 
 
-	// Fancy-box
-	// $(".to-modal").on('click', function () {
-	// 	$.fancybox.open({
-	// 		src: '#modal',
-	// 		touch: 'false',
-	// 		smallBtn: false,
-	// 		buttons: '',
-	// 	});
-	// });
+	// Fancy - box
+	$("#to-modal").on('click', function () {
+		$.fancybox.open({
+			src: '#modal',
+			touch: 'false',
+			smallBtn: false,
+			buttons: '',
+		});
+	});
 
 	$("#to-privacy").on('click', function () {
 		$.fancybox.open({
@@ -226,7 +226,7 @@ $(document).ready(function () {
 	});
 
 	// Input-mask
-	// $('input[type="tel"]').inputmask({ "mask": "+7 (999)-999-99-99" });
+	$('input[type="tel"]').inputmask({ "mask": "+7 (999)-999-99-99" });
 
 	// // Табы
 	// $('ul.tabs__list').on('click', 'li:not(.active)', function () {

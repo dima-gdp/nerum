@@ -11,7 +11,6 @@
 		position: relative;
 		overflow: hidden;
 		background: #ebebeb;
-		border-radius: 26px;
 	}
 	// .modal__close
 	&__close {
@@ -26,7 +25,7 @@
 		@media (min-width: 992px) {
 			&:hover.modal__close::after,
 			&:hover.modal__close::before {
-				background-color: #e31e24;
+				background-color: #c5a995;
 			}
 		}
 
@@ -59,30 +58,22 @@
 	}
 	// .modal__content
 	&__content {
-		padding: 30px 35px 30px 25px;
+		padding: 50px 30px 40px 30px;
 	}
 	// .modal__title
 	&__title {
-		margin-bottom: 10px;
-		padding-bottom: 18px;
-		padding-left: 27px;
+		margin-bottom: 30px;
+		font-weight: 700;
 		font-size: 24px;
-		position: relative;
-		&::after {
-			content: "";
-			position: absolute;
-			left: 0;
-			top: -9px;
-			width: 7px;
-			height: 45px;
-			background-color: #e31e24;
-		}
+		line-height: lh(44, 36);
+		text-align: center;
+		text-transform: uppercase;
 	}
 	// .modal__subtitle
 	&__subtitle {
 		margin-bottom: 20px;
 		font-size: 16px;
-		color: #000;
+		line-height: 1.42;
 	}
 	// .modal__form
 	&__form {
@@ -104,9 +95,9 @@
 	// .modal__btn
 	&__btn {
 		width: 100%;
-		min-height: 52px !important;
-		background: #e31e24;
-		border-radius: 50px;
+		min-height: 52px;
+		background: #c5a995;
+		// border-radius: 50px;
 		text-transform: uppercase;
 		font-weight: 700;
 		color: #fefefe;
@@ -125,28 +116,37 @@
 		color: #000;
 		a {
 			text-decoration-line: underline;
-			color: #e31e24;
+			color: #c5a995;
 			cursor: pointer;
 		}
 	}
 }
 
 @media (max-width: 768px) {
-	.modal-container-polit {
-		padding: 40px 20px 20px 20px;
+	.modal__title {
+		@include adaptiv(font-size, 24, 17, 768, 320);
 	}
-	.title-modal-polit {
-		font-size: 23px;
-		line-height: 24px;
-	}
-	.modal-close-polit {
-		top: 9px;
-		right: 10px;
+	.modal__subtitle {
+		@include adaptiv(font-size, 16, 14, 768, 320);
 	}
 }
 
-@media (max-width: 576px) {
-	.modal__image {
-		display: none;
+@media (max-width: 420px) {
+	.modal__title {
+		margin-bottom: 20px;
+	}
+	.modal__content {
+		padding: 40px 20px 30px 20px;
+	}
+	.modal__privacy {
+		font-size: 10px;
+	}
+	.modal__input {
+		padding: 5px 15px;
+		font-size: 15px;
+		min-height: 43px;
+	}
+	.modal__btn {
+		min-height: 43px;
 	}
 }
