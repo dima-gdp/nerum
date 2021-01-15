@@ -368,6 +368,48 @@ body {
 	}
 }
 
+#to-privacy {
+	cursor: pointer;
+	transition: color 0.3s;
+	&:hover {
+		color: #c5a995;
+	}
+}
+
+.udnet-link {
+	color: #ffffff;
+	transition: color 0.3s;
+	&:hover {
+		color: #c5a995;
+	}
+}
+
+[data-aos="build"] {
+	&.aos-animate {
+		&::before {
+			transform: translateY(-100%);
+		}
+		&::after {
+			transform: translateY(100%);
+		}
+	}
+
+	// @media screen and (min-width: 768px) {
+	//   transform: translateX(100px);
+
+	//   &.aos-animate {
+	//     transform: translateX(0);
+	//   }
+	// }
+}
+
+[data-aos] {
+	body[data-aos-easing="new-easing"] &,
+	&[data-aos][data-aos-easing="new-easing"] {
+		transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+	}
+}
+
 @keyframes logo {
 	0% {
 		transform: translateX(0);
