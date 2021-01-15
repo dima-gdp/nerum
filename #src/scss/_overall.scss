@@ -368,11 +368,16 @@ body {
 	}
 }
 
-#to-privacy {
+.to-privacy {
 	cursor: pointer;
+	color: #fff;
 	transition: color 0.3s;
 	&:hover {
 		color: #c5a995;
+	}
+	&--modal {
+		color: #000;
+		text-decoration: underline;
 	}
 }
 
@@ -407,6 +412,22 @@ body {
 	body[data-aos-easing="new-easing"] &,
 	&[data-aos][data-aos-easing="new-easing"] {
 		transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+	}
+}
+
+.close-modal {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #fff url("../img/close-modal.svg") 50% 50% no-repeat;
+	border: 1px solid #000000;
+	cursor: pointer;
+	@media (max-width: 768px) {
+		width: 30px;
+		height: 30px;
+		background: #fff url("../img/close-modal.svg") 50% 50% / 16px 16px no-repeat;
 	}
 }
 

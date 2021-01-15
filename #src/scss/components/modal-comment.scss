@@ -1,46 +1,14 @@
 .modal-comment {
 	display: none;
-	max-width: 900px;
+	max-width: 800px;
 	width: 100%;
 	padding: 50px 0px 50px 0px;
 	// .modal-comment__close
 	&__close {
-		width: 25px;
-		height: 25px;
-		position: absolute;
-		top: 15px;
-		right: 12px;
-		background-color: transparent;
-		cursor: pointer;
-
-		@media (min-width: 992px) {
-			&:hover.modal-size__close::after,
-			&:hover.modal-size__close::before {
-				background-color: #e31e24;
-			}
-		}
-
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			top: calc(50% - 1px);
-			left: 0;
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-			transition: background-color 0.3s;
-		}
-		&::before {
-			transform: rotate(-45deg);
-		}
-		&::after {
-			transform: rotate(45deg);
-		}
 	}
 	// .modal-comment__container
 	&__container {
-		max-width: 683px;
+		max-width: 630px;
 		margin: 0 auto;
 		padding: 0 20px;
 	}
@@ -49,7 +17,7 @@
 	}
 	// .modal-comment__title
 	&__title {
-		margin-bottom: 54px;
+		margin-bottom: 37px;
 		font-weight: 700;
 		font-size: 36px;
 		line-height: lh(44, 36);
@@ -67,7 +35,7 @@
 		display: flex;
 		justify-content: center;
 		margin-bottom: 30px;
-		padding: 10px 20px 10px 27px;
+		padding: 10px 20px 10px 25px;
 		background: #ffffff;
 		border: 1px solid #c4c4c4;
 		font-size: 16px;
@@ -75,18 +43,18 @@
 	}
 	// .modal-comment__textarea
 	&__textarea {
-		padding: 10px 20px 10px 27px;
-		margin-bottom: 57px;
+		padding: 10px 20px 10px 25px;
+		margin-bottom: 41px;
 		background: #ffffff;
 		border: 1px solid #c4c4c4;
 		font-size: 16px;
 		color: #000000;
 		resize: none;
-		height: 421px;
+		height: 250px;
 	}
 	// .modal-comment__btn
 	&__btn {
-		min-height: 101px;
+		min-height: 80px;
 		font-size: 24px;
 		display: flex;
 		align-items: center;

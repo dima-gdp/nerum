@@ -1,46 +1,14 @@
 .modal-size {
 	display: none;
-	max-width: 900px;
+	max-width: 800px;
 	width: 100%;
 	padding: 50px 0px 50px 0px;
 	// .modal-size__close
 	&__close {
-		width: 25px;
-		height: 25px;
-		position: absolute;
-		top: 15px;
-		right: 12px;
-		background-color: transparent;
-		cursor: pointer;
-
-		@media (min-width: 992px) {
-			&:hover.modal-size__close::after,
-			&:hover.modal-size__close::before {
-				background-color: #e31e24;
-			}
-		}
-
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			top: calc(50% - 1px);
-			left: 0;
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-			transition: background-color 0.3s;
-		}
-		&::before {
-			transform: rotate(-45deg);
-		}
-		&::after {
-			transform: rotate(45deg);
-		}
 	}
 	// .modal-size__container
 	&__container {
-		max-width: 772px;
+		max-width: 672px;
 		margin: 0 auto;
 		padding: 0 20px;
 	}
@@ -49,7 +17,7 @@
 	}
 	// .modal-size__title
 	&__title {
-		margin-bottom: 73px;
+		margin-bottom: 37px;
 		font-weight: 700;
 		font-size: 36px;
 		line-height: lh(44, 36);
@@ -62,12 +30,12 @@
 	}
 	// .modal-size__table
 	&__table {
-		margin-bottom: 49px;
+		margin-bottom: 29px;
 		border-collapse: collapse;
 		width: 100%;
 		min-width: 420px;
 		th {
-			padding: 15px 20px;
+			padding: 12px 18px;
 			font-size: 16px;
 			line-height: lh(20, 16);
 			font-weight: 400;
@@ -76,7 +44,7 @@
 			border: 4px solid #ffffff;
 		}
 		td {
-			padding: 15px 20px;
+			padding: 12px 18px;
 			font-size: 16px;
 			line-height: lh(20, 16);
 			color: #000000;

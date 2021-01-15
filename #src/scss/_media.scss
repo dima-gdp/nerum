@@ -6,9 +6,6 @@
 	.hero__title {
 		font-size: calc(60px + (88 - 60) * ((100vw - 1200px) / (1696 - 1200)));
 	}
-	.modal-comment__textarea {
-		height: 320px;
-	}
 }
 
 @media (max-width: 1600px) {
@@ -216,17 +213,20 @@
 		@include adaptiv(padding-top, 70, 30, 1440, 320);
 	}
 	.modal-cart__title {
-		@include adaptiv(margin-bottom, 66, 15, 1440, 320);
+		@include adaptiv(margin-bottom, 37, 15, 1440, 320);
 		@include adaptiv(font-size, 36, 16, 1440, 320);
 	}
 	.modal-cart__link {
-		@include adaptiv(margin-bottom, 38, 10, 1440, 320);
+		@include adaptiv(margin-bottom, 36, 10, 1440, 320);
 		@include adaptiv(font-size, 24, 13, 1440, 320);
 	}
 	.modal-cart__close {
 		@include adaptiv(font-size, 24, 13, 1440, 320);
 	}
 	.modal-comment__btn {
+		@include adaptiv(font-size, 24, 13, 1440, 320);
+	}
+	.modal-call__btn {
 		@include adaptiv(font-size, 24, 13, 1440, 320);
 	}
 	.lb-single__images {
@@ -238,18 +238,25 @@
 		@include adaptiv(margin-bottom, 82, 20, 1440, 320);
 	}
 	.modal-size__title {
-		@include adaptiv(margin-bottom, 73, 15, 1440, 320);
+		@include adaptiv(margin-bottom, 37, 15, 1440, 320);
 		@include adaptiv(font-size, 36, 16, 1440, 320);
 	}
+	.modal-call__privacy {
+		@include adaptiv(font-size, 14, 10, 1440, 320);
+	}
 	.modal-size__table {
-		@include adaptiv(margin-bottom, 49, 15, 1440, 320);
+		@include adaptiv(margin-bottom, 29, 15, 1440, 320);
 	}
 	.modal-comment__title {
-		@include adaptiv(margin-bottom, 54, 15, 1440, 320);
+		@include adaptiv(margin-bottom, 37, 15, 1440, 320);
+		@include adaptiv(font-size, 36, 16, 1440, 320);
+	}
+	.modal-call__title {
+		@include adaptiv(margin-bottom, 37, 15, 1440, 320);
 		@include adaptiv(font-size, 36, 16, 1440, 320);
 	}
 	.modal-comment__textarea {
-		@include adaptiv(margin-bottom, 57, 15, 1440, 320);
+		@include adaptiv(margin-bottom, 41, 15, 1440, 320);
 	}
 }
 
@@ -509,6 +516,9 @@
 		min-height: 70px;
 	}
 	.modal-comment__btn {
+		min-height: 70px;
+	}
+	.modal-call__btn {
 		min-height: 70px;
 	}
 }
@@ -908,12 +918,15 @@
 	.modal-comment__btn {
 		min-height: 60px;
 	}
+	.modal-comment__btn {
+		min-height: 60px;
+	}
 	.modal-size__table th {
-		padding: 15px 15px;
+		padding: 11px 15px;
 		font-size: 15px;
 	}
 	.modal-size__table td {
-		padding: 15px 15px;
+		padding: 11px 15px;
 		font-size: 15px;
 	}
 	.modal-size__text {
@@ -1143,6 +1156,9 @@
 	.modal-comment__btn {
 		min-height: 50px;
 	}
+	.modal-call__btn {
+		min-height: 50px;
+	}
 	.modal-size__table th {
 		padding: 10px 10px;
 		font-size: 14px;
@@ -1158,6 +1174,15 @@
 		margin-bottom: 20px;
 		padding: 10px 15px 10px 15px;
 		font-size: 15px;
+	}
+	.modal-call__input {
+		margin-bottom: 20px;
+		padding: 10px 15px 10px 15px;
+		font-size: 15px;
+		height: 50px;
+	}
+	.modal-call__form {
+		margin-bottom: 20px;
 	}
 	.modal-comment__textarea {
 		padding: 10px 15px 10px 15px;
@@ -1399,6 +1424,13 @@
 		margin-right: 10px;
 	}
 	.modal-comment__input {
+		margin-bottom: 15px;
+	}
+	.modal-call__input {
+		margin-bottom: 15px;
+		height: 43px;
+	}
+	.modal-call__form {
 		margin-bottom: 15px;
 	}
 }

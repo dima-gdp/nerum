@@ -1,18 +1,15 @@
-<div id="modal" class="modal">
-	<div class="modal__container">
-		<button class="modal__close" data-fancybox-close></button>
-		<div class="modal__content">
-			<div class="modal__title">Заказать звонок</div>
-			<p class="modal__subtitle">Просто заполните контактную форму, наш специалист свяжется с Вами в ближайшее
-				время.</p>
-			<form class="modal__form">
-				<input type="text" class="modal__input" placeholder="Ваше имя">
-				<input type="tel" class="modal__input modal-tel" placeholder="+7 (___)-___-__-__">
-				<button class="modal__btn" type="submit">отправить</button>
+<div id="modal-call" class="modal-call">
+	<div class="modal-call__close close-modal" data-fancybox-close></div>
+	<div class="modal-call__container">
+		<div class="modal-call__content">
+			<div class="modal-call__title">Заказать звонок</div>
+			<form class="modal-call__form">
+				<input type="text" class="modal-call__input" placeholder="Ваше имя">
+				<input type="tel" class="modal-call__input" placeholder="Номер телефона">
+				<button type="submit" class="modal-call__btn">Отправить</button>
 			</form>
-			<div class="modal__privacy">Нажимая кнопку, я принимаю<br>политику обработки <a id="to-privacy">персональных
-					данных</a>
-			</div>
+			<div class="modal-call__privacy">Согласен(на) на обработку <a class="to-privacy to-privacy--modal">персональных
+					данных</a></div>
 		</div>
 	</div>
 </div>

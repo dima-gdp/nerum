@@ -1,152 +1,75 @@
-.modal {
+.modal-call {
 	display: none;
-	max-width: 570px;
+	max-width: 800px;
 	width: 100%;
-	box-sizing: border-box;
-	padding: 0;
-	background-color: transparent;
-	// .modal__container
-	&__container {
-		display: flex;
-		position: relative;
-		overflow: hidden;
-		background: #ebebeb;
-	}
-	// .modal__close
+	padding: 50px 0px 50px 0px;
+	// .modal-comment__close
 	&__close {
-		width: 25px;
-		height: 25px;
-		position: absolute;
-		top: 15px;
-		right: 12px;
-		background-color: transparent;
-		cursor: pointer;
-
-		@media (min-width: 992px) {
-			&:hover.modal__close::after,
-			&:hover.modal__close::before {
-				background-color: #c5a995;
-			}
-		}
-
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			top: calc(50% - 1px);
-			left: 0;
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-			transition: background-color 0.3s;
-		}
-		&::before {
-			transform: rotate(-45deg);
-		}
-		&::after {
-			transform: rotate(45deg);
-		}
 	}
-	// .modal__image
-	&__image {
-		width: 100%;
-		max-width: 170px;
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: 50% 50%;
-		height: auto;
+	// .modal-comment__container
+	&__container {
+		max-width: 630px;
+		margin: 0 auto;
+		padding: 0 20px;
 	}
-	// .modal__content
+	// .modal-comment__content
 	&__content {
-		padding: 50px 30px 40px 30px;
 	}
-	// .modal__title
+	// .modal-comment__title
 	&__title {
-		margin-bottom: 30px;
+		margin-bottom: 37px;
 		font-weight: 700;
-		font-size: 24px;
+		font-size: 36px;
 		line-height: lh(44, 36);
 		text-align: center;
 		text-transform: uppercase;
+		color: #000000;
 	}
-	// .modal__subtitle
-	&__subtitle {
-		margin-bottom: 20px;
-		font-size: 16px;
-		line-height: 1.42;
-	}
-	// .modal__form
+	// .modal-comment__form
 	&__form {
-		margin-bottom: 28px;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 30px;
 	}
-	// .modal__input
+	// .modal-comment__input
 	&__input {
-		min-height: 51px;
-		width: 100%;
-		background-color: transparent;
-		border: 1px solid #545a65;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+		height: 60px;
+		padding: 10px 20px 10px 25px;
+		background: #ffffff;
+		border: 1px solid #c4c4c4;
 		font-size: 16px;
-		padding: 5px 20px;
-		color: #000;
-		&:not(:last-child) {
-			margin-bottom: 18px;
+		color: #000000;
+		&::placeholder {
+			color: #000000;
 		}
 	}
-	// .modal__btn
+	// .modal-comment__btn
 	&__btn {
-		width: 100%;
-		min-height: 52px;
-		background: #c5a995;
-		// border-radius: 50px;
+		min-height: 70px;
+		font-size: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 10px;
+		line-height: lh(20, 16);
 		text-transform: uppercase;
-		font-weight: 700;
-		color: #fefefe;
-	}
-	// .modal__privacy
-	&__privacy {
-		font-size: 12px;
-		width: 100%;
-		text-align: left;
-		padding-left: 34px;
-		background-image: url("../img/polit.png");
-		background-size: 22px auto;
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		min-height: 23px;
-		color: #000;
-		a {
-			text-decoration-line: underline;
-			color: #c5a995;
-			cursor: pointer;
+		background: #c5a995;
+		color: #ffffff;
+		transition: all 0.3s;
+		cursor: pointer;
+
+		&:hover {
+			color: #000000;
+			background: #ffffff;
+			border: 1px solid #c5a995;
 		}
 	}
-}
-
-@media (max-width: 768px) {
-	.modal__title {
-		@include adaptiv(font-size, 24, 17, 768, 320);
-	}
-	.modal__subtitle {
-		@include adaptiv(font-size, 16, 14, 768, 320);
-	}
-}
-
-@media (max-width: 420px) {
-	.modal__title {
-		margin-bottom: 20px;
-	}
-	.modal__content {
-		padding: 40px 20px 30px 20px;
-	}
-	.modal__privacy {
-		font-size: 10px;
-	}
-	.modal__input {
-		padding: 5px 15px;
-		font-size: 15px;
-		min-height: 43px;
-	}
-	.modal__btn {
-		min-height: 43px;
+	&__privacy {
+		font-size: 14px;
+		line-height: lh(17, 14);
 	}
 }

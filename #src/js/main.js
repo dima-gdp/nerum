@@ -169,14 +169,14 @@ $(document).ready(function () {
 	// Fancy - box
 	$("#to-modal").on('click', function () {
 		$.fancybox.open({
-			src: '#modal',
+			src: '#modal-call',
 			touch: 'false',
 			smallBtn: false,
 			buttons: '',
 		});
 	});
 
-	$("#to-privacy").on('click', function () {
+	$(".to-privacy").on('click', function () {
 		$.fancybox.open({
 			src: '#modal-polit',
 			touch: 'false',
