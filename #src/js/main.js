@@ -1,6 +1,9 @@
 $(document).ready(function () {
 	objectFitImages();
 
+	alertify.set('notifier', 'position', 'bottom-right');
+	alertify.set('notifier', 'delay', 10);
+
 	const mobMenu = $('.mob-menu');
 	const burger = $('.burger');
 	const searchBtn = $('.header__search-btn');
@@ -112,6 +115,7 @@ $(document).ready(function () {
 		observer: true,
 		observeParents: true,
 		loop: false,
+
 		breakpoints: {
 			577: {
 				pagination: {
@@ -122,6 +126,11 @@ $(document).ready(function () {
 			},
 			769: {
 				mousewheel: true,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+					clickable: true
+				},
 			}
 		}
 	});
@@ -167,7 +176,7 @@ $(document).ready(function () {
 
 
 	// Fancy - box
-	$("#to-modal").on('click', function () {
+	$(".to-modal").on('click', function () {
 		$.fancybox.open({
 			src: '#modal-call',
 			touch: 'false',
@@ -188,6 +197,15 @@ $(document).ready(function () {
 	$("#to-size").on('click', function () {
 		$.fancybox.open({
 			src: '#modal-size',
+			touch: 'false',
+			smallBtn: false,
+			buttons: '',
+		});
+	});
+
+	$("#to-thanks").on('click', function () {
+		$.fancybox.open({
+			src: '#modal-thanks',
 			touch: 'false',
 			smallBtn: false,
 			buttons: '',

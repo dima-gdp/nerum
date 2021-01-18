@@ -226,6 +226,9 @@
 	.modal-comment__btn {
 		@include adaptiv(font-size, 24, 13, 1440, 320);
 	}
+	.modal-thanks__btn {
+		@include adaptiv(font-size, 24, 13, 1440, 320);
+	}
 	.modal-call__btn {
 		@include adaptiv(font-size, 24, 13, 1440, 320);
 	}
@@ -250,6 +253,14 @@
 	.modal-comment__title {
 		@include adaptiv(margin-bottom, 37, 15, 1440, 320);
 		@include adaptiv(font-size, 36, 16, 1440, 320);
+	}
+	.modal-thanks__title {
+		@include adaptiv(margin-bottom, 37, 15, 1440, 320);
+		@include adaptiv(font-size, 36, 16, 1440, 320);
+	}
+	.modal-thanks__text {
+		@include adaptiv(margin-bottom, 25, 15, 1440, 320);
+		@include adaptiv(font-size, 24, 16, 1440, 320);
 	}
 	.modal-call__title {
 		@include adaptiv(margin-bottom, 37, 15, 1440, 320);
@@ -516,6 +527,9 @@
 		min-height: 70px;
 	}
 	.modal-comment__btn {
+		min-height: 70px;
+	}
+	.modal-thanks__btn {
 		min-height: 70px;
 	}
 	.modal-call__btn {
@@ -918,8 +932,8 @@
 	.modal-comment__btn {
 		min-height: 60px;
 	}
-	.modal-comment__btn {
-		min-height: 60px;
+	.modal-thanks__btn {
+		min-height: 70px;
 	}
 	.modal-size__table th {
 		padding: 11px 15px;
@@ -1154,6 +1168,9 @@
 		min-height: 50px;
 	}
 	.modal-comment__btn {
+		min-height: 50px;
+	}
+	.modal-thanks__btn {
 		min-height: 50px;
 	}
 	.modal-call__btn {

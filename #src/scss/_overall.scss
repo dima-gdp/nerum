@@ -391,11 +391,13 @@ body {
 
 [data-aos="build"] {
 	&.aos-animate {
-		&::before {
-			transform: translateY(-100%);
-		}
-		&::after {
-			transform: translateY(100%);
+		.lookbook__item {
+			&::before {
+				transform: translateY(-100%);
+			}
+			&::after {
+				transform: translateY(100%);
+			}
 		}
 	}
 

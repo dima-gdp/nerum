@@ -18,8 +18,12 @@
 	}
 	// .lookbook__column
 	&__column {
-		&:nth-child(3n-1) {
-			padding-top: 57px;
+		&.aos-animate {
+			@media (min-width: 993px) {
+				&:nth-child(3n-1) {
+					padding-top: 57px;
+				}
+			}
 		}
 	}
 	// .lookbook__item
