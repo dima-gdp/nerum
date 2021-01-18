@@ -1,66 +1,114 @@
-<header class="header">
-	<div class="header__container container container--b">
-		<button class="header__burger burger">
-			<span></span>
-			<span></span>
-			<span></span>
-		</button>
-		<a href="" class="header__logo">
-			@@include('img/logo.svg')
-		</a>
-		<nav class="header__nav nav">
-			<div class="nav__list">
-				<span class="nav__item">
-					<a href="#" class="nav__link nav__link--current">О компании</a>
-				</span>
-				<span class="nav__item">
-					<a href="#" class="nav__link">Каталог</a>
-				</span>
-				<span class="nav__item">
-					<a href="#" class="nav__link">Новинки</a>
-				</span>
-				<span class="nav__item">
-					<a href="#" class="nav__link">Lookbook</a>
-				</span>
-				<span class="nav__item">
-					<a href="#" class="nav__link">Информация</a>
-				</span>
-				<span class="nav__item">
-					<a href="#" class="nav__link">Контакты</a>
-				</span>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/alertify.min.css">
+	<link rel="stylesheet" href="css/default.min.css">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;" />
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+	<title>Нерум</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="cursor">
+			<div class="ellipse">смотерть</div>
+		</div>
+		@@include('mobile-menu.html')
+		@@include('modal-cart.html')
+		@@include('modal-polit.html')
+		@@include('modal-thanks.html')
+		@@include('modal-comment.html')
+		@@include('modal-size.html')
+		@@include('modal.html')
+		<header class="header">
+			<div class="header__container container container--b">
+				<button class="header__burger burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<a href="" class="header__logo">
+					@@include('img/logo.svg')
+				</a>
+				<nav class="header__nav nav">
+					<div class="nav__list">
+						<span class="nav__item">
+							<a href="#" class="nav__link nav__link--current">О компании</a>
+						</span>
+						<span class="nav__item">
+							<a href="#" class="nav__link">Каталог</a>
+						</span>
+						<span class="nav__item">
+							<a href="#" class="nav__link">Новинки</a>
+						</span>
+						<span class="nav__item">
+							<a href="#" class="nav__link">Lookbook</a>
+						</span>
+						<span class="nav__item">
+							<a href="#" class="nav__link">Информация</a>
+						</span>
+						<span class="nav__item">
+							<a href="#" class="nav__link">Контакты</a>
+						</span>
+					</div>
+				</nav>
+				<div class="header__social social">
+					<a href="#" class="social__item inst">
+						@@include('img/instagram.svg')
+					</a>
+					<a href="#" class="social__item vk">
+						@@include('img/vk.svg')
+					</a>
+				</div>
+				<div class="header__tels tels">
+					<a href="#" class="tels__item">
+						@@include('img/viber.svg')
+					</a>
+					<a href="#" class="tels__item">
+						@@include('img/whatsapp.svg')
+					</a>
+				</div>
+				<a href="tel:88172757455" class="header__tel">8 (8172) 75-74-55</a>
+				<a class="header__btn btn-brown btn-brown--s to-modal">Заказать звонок</a>
+				<div class="header__control">
+					<button class="header__search-btn" type="button"></button>
+					<a href="#" class="header__cart">
+						@@include('img/cart-header.svg')
+					</a>
+				</div>
+				<div class="header__lang lang">
+					<div class="lang__item">En</div>
+					<div class="lang__item lang__item--active">Ru</div>
+				</div>
 			</div>
-		</nav>
-		<div class="header__social social">
-			<a href="#" class="social__item inst">
-				@@include('img/instagram.svg')
-			</a>
-			<a href="#" class="social__item vk">
-				@@include('img/vk.svg')
-			</a>
-		</div>
-		<div class="header__tels tels">
-			<a href="#" class="tels__item">
-				@@include('img/viber.svg')
-			</a>
-			<a href="#" class="tels__item">
-				@@include('img/whatsapp.svg')
-			</a>
-		</div>
-		<a href="tel:88172757455" class="header__tel">8 (8172) 75-74-55</a>
-		<a class="header__btn btn-brown btn-brown--s to-modal">Заказать звонок</a>
-		<div class="header__control">
-			<button class="header__search-btn" type="button"></button>
-			<a href="#" class="header__cart">
-				@@include('img/cart-header.svg')
-			</a>
-		</div>
-		<div class="header__lang lang">
-			<div class="lang__item">En</div>
-			<div class="lang__item lang__item--active">Ru</div>
-		</div>
-	</div>
-	<form action="" class="header__form form-header">
-		<input type="text" class="form-header__input">
-		<button class="form-header__submit" type="submit">Поиск</button>
-	</form>
-</header>
+			<form action="" class="header__form form-header">
+				<input type="text" class="form-header__input">
+				<button class="form-header__submit" type="submit">Поиск</button>
+			</form>
+		</header>

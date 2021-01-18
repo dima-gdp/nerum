@@ -1,69 +1,43 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="css/swiper.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<title>Нерум</title>
-</head>
-
-<body>
-	<div class="wrapper">
-		@@include('mobile-menu.html')
-		@@include('modal-polit.html')
-		@@include('header.html')
-		<main class="main">
-			<div class="breadcrumbs container">
-				<a href="#" class="breadcrumbs-link">Главная</a>
-				<span class="breadcrumbs-break">|</span>
-				<span class="itog-breadcrumbs">Джемпера и туники</span>
-			</div>
-			<section class="info">
-				<div class="info__container container">
-					<h1 class="info__title title">Информация</h1>
-					<div class="info__flex">
-						@@include('aside-info.html')
-						<div class="info__content content-info">
-							<h2 class="content-info__title title title--24">Формы оплаты</h2>
-							<div class="content-info__block type-style">
-								<p>Вы можете выбрать одну из нескольких форм оплаты:</p>
-								<h3>ДЕБЕТОВАЯ ИЛИ КРЕДИТНАЯ КАРТА</h3>
-								<p>Visa, MasterCard, JCB и Diners. Оплата взимается с дебетовой карты в реальном времени.</p>
-								<h3>НАЛОЖЕННЫЙ ПЛАТЕЖ</h3>
-								<p>Если Вы предпочитаете оплатить заказ, когда он будет доставлен по Вашему домашнему адресу или когда
-									Вы заберете его из пункта выдачи, выберите форму оплаты «Наложенный платеж» и нажмите на «Подтвердить
-									оплату».</p>
-								<h3>ЯНДЕКС ДЕНЬГИ, WEBMONEY И QIWI КОШЕЛЕК</h3>
-								<p>Мы принимаем электронные платежи систем ЯНДЕКС ДЕНЬГИ, Webmoney и QIWI КОШЕЛЕК.</p>
-								<h3>НАЛИЧНЫМИ ЧЕРЕЗ ТЕРМИНАЛ</h3>
-								<p>Этот способ оплаты доступен в платежных терминалах, банкоматах, салонах связи, кассах банков или
-									через другие сервисы, сотрудничающие с Yandex.</p>
-								<p>Чтобы оплатить заказ Наличными через терминал, выберите данный способ оплаты и нажмите "Подтвердить
-									оплату". После этого Вы будете переадресованы на страницу подтверждения в сервисе Яндекс с
-									последующими инструкциями для завершения оплаты.</p>
-								<p><b>ВНИМАНИЕ!</b> Вы можете не получить это письмо из-за настроек безопасности Вашей электронной
-									почты. Пожалуйста, проверьте настройки безопасности Вашей электронной почты и Ваш телефон перед тем,
-									как оформить заказ.</p>
-								<p> Оплата должна быть произведена в течение трех дней с момента совершения заказа. Обратите внимание,
-									что Ваш заказ будет отправлен Вам только после его оплаты.</p>
-							</div>
-						</div>
+@@include('header.html')
+<main class="main">
+	<div class="breadcrumbs container">
+		<a href="#" class="breadcrumbs-link">Главная</a>
+		<span class="breadcrumbs-break">|</span>
+		<span class="itog-breadcrumbs">Джемпера и туники</span>
+	</div>
+	<section class="info">
+		<div class="info__container container">
+			<h1 class="info__title title">Информация</h1>
+			<div class="info__flex">
+				@@include('aside-info.html')
+				<div class="info__content content-info">
+					<h2 class="content-info__title title title--24">Формы оплаты</h2>
+					<div class="content-info__block type-style">
+						<p>Вы можете выбрать одну из нескольких форм оплаты:</p>
+						<h3>ДЕБЕТОВАЯ ИЛИ КРЕДИТНАЯ КАРТА</h3>
+						<p>Visa, MasterCard, JCB и Diners. Оплата взимается с дебетовой карты в реальном времени.</p>
+						<h3>НАЛОЖЕННЫЙ ПЛАТЕЖ</h3>
+						<p>Если Вы предпочитаете оплатить заказ, когда он будет доставлен по Вашему домашнему адресу или когда
+							Вы заберете его из пункта выдачи, выберите форму оплаты «Наложенный платеж» и нажмите на «Подтвердить
+							оплату».</p>
+						<h3>ЯНДЕКС ДЕНЬГИ, WEBMONEY И QIWI КОШЕЛЕК</h3>
+						<p>Мы принимаем электронные платежи систем ЯНДЕКС ДЕНЬГИ, Webmoney и QIWI КОШЕЛЕК.</p>
+						<h3>НАЛИЧНЫМИ ЧЕРЕЗ ТЕРМИНАЛ</h3>
+						<p>Этот способ оплаты доступен в платежных терминалах, банкоматах, салонах связи, кассах банков или
+							через другие сервисы, сотрудничающие с Yandex.</p>
+						<p>Чтобы оплатить заказ Наличными через терминал, выберите данный способ оплаты и нажмите "Подтвердить
+							оплату". После этого Вы будете переадресованы на страницу подтверждения в сервисе Яндекс с
+							последующими инструкциями для завершения оплаты.</p>
+						<p><b>ВНИМАНИЕ!</b> Вы можете не получить это письмо из-за настроек безопасности Вашей электронной
+							почты. Пожалуйста, проверьте настройки безопасности Вашей электронной почты и Ваш телефон перед тем,
+							как оформить заказ.</p>
+						<p> Оплата должна быть произведена в течение трех дней с момента совершения заказа. Обратите внимание,
+							что Ваш заказ будет отправлен Вам только после его оплаты.</p>
 					</div>
 				</div>
-			</section>
-			@@include('ss.html')
-		</main>
-		@@include('footer.html')
-	</div>
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/ofi.min.js"></script>
-	<script src="js/jquery.inputmask.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
-</html>
+			</div>
+		</div>
+	</section>
+	@@include('ss.html')
+</main>
+@@include('footer.html')

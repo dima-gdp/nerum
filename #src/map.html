@@ -1,54 +1,26 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="css/swiper.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<title>Нерум</title>
-</head>
-
-<body>
-	<div class="wrapper">
-		@@include('mobile-menu.html')
-		@@include('modal-polit.html')
-		@@include('header.html')
-		<main class="main">
-			<div class="breadcrumbs container">
-				<a href="#" class="breadcrumbs-link">Главная</a>
-				<span class="breadcrumbs-break">|</span>
-				<span class="itog-breadcrumbs">Джемпера и туники</span>
-			</div>
-			<section class="info">
-				<div class="info__container container">
-					<h1 class="info__title title">Информация</h1>
-					<div class="info__flex">
-						@@include('aside-info.html')
-						<div class="info__content content-info">
-							<h2 class="content-info__title title title--24">География поставок</h2>
-							<div class="content-info__block type-style">
-								<p>На сегодня нам удалось поставить товары даже в Салехард и Новый Уренгой. И мы всегда ради расширять
-									горизонты нашей работы вместе с Вами!</p>
-							</div>
-							<div class="info__map" id="map"></div>
-						</div>
-					</div>
-				</div>
-			</section>
-			@@include('ss.html')
-		</main>
-		@@include('footer.html')
+@@include('header.html')
+<main class="main">
+	<div class="breadcrumbs container">
+		<a href="#" class="breadcrumbs-link">Главная</a>
+		<span class="breadcrumbs-break">|</span>
+		<span class="itog-breadcrumbs">Джемпера и туники</span>
 	</div>
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/ofi.min.js"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=394d86c9-b02e-4b1a-9c51-71b3a3a770ee&lang=ru_RU">
-	</script>
-	<script src="js/jquery.inputmask.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
-</html>
+	<section class="info">
+		<div class="info__container container">
+			<h1 class="info__title title">Информация</h1>
+			<div class="info__flex">
+				@@include('aside-info.html')
+				<div class="info__content content-info">
+					<h2 class="content-info__title title title--24">География поставок</h2>
+					<div class="content-info__block type-style">
+						<p>На сегодня нам удалось поставить товары даже в Салехард и Новый Уренгой. И мы всегда ради расширять
+							горизонты нашей работы вместе с Вами!</p>
+					</div>
+					<div class="info__map" id="map"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	@@include('ss.html')
+</main>
+@@include('footer.html')

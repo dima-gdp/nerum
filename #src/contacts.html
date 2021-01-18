@@ -1,61 +1,35 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" href="css/swiper.min.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<title>Нерум</title>
-</head>
-
-<body>
-	<div class="wrapper">
-		@@include('mobile-menu.html')
-		@@include('modal-polit.html')
-		@@include('header.html')
-		<main class="main">
-			<div class="breadcrumbs container">
-				<a href="#" class="breadcrumbs-link">Главная</a>
-				<span class="breadcrumbs-break">|</span>
-				<span class="itog-breadcrumbs">Джемпера и туники</span>
-			</div>
-			<section class="contacts">
-				<div class="contacts__container container">
-					<h1 class="contacts__title title">Контакты</h1>
-					<div class="contacts__grid">
-						<div class="contacts__column">
-							<h2>Юридический адрес:</h2>
-							<p>160012, г. Вологда, Советский пр-т, 135-а</p>
-							<a href="tel:+78172757455">7 (8172) 75-74-55</a>
-							<a href="mailto:company@vologdalen.ru">company@vologdalen.ru</a>
-						</div>
-						<div class="contacts__column">
-							<h2>Адрес офисов в Москве</h2>
-							<p>г. Москва, м. «Коломенская», ТЦ «1000 вещей», павильон №18, ул. Судостроительная, д. 1</p>
-							<p>г. Москва, м. «Бабушкинская», ТК «Бабушкинский», павильон №6, ул. Менжинского, д. 36 </p>
-							<p>г. Москва, м. "Семеновская", Магазин " Московские товары"</p>
-							<p>Измайловский вал, 20, строение 1</p>
-						</div>
-						<div class="contacts__column">
-							<h2>Дистрибьютор в Москве </h2>
-							<p>PR-менеджер бренда Нерум - Екатерина Ястребова </p>
-							<a href="tel:+79266092333">+7 (926) 609-23-33</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			@@include('ss.html')
-		</main>
-		@@include('footer.html')
+@@include('header.html')
+<main class="main">
+	<div class="breadcrumbs container">
+		<a href="#" class="breadcrumbs-link">Главная</a>
+		<span class="breadcrumbs-break">|</span>
+		<span class="itog-breadcrumbs">Джемпера и туники</span>
 	</div>
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/ofi.min.js"></script>
-	<script src="js/jquery.inputmask.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
-</html>
+	<section class="contacts">
+		<div class="contacts__container container">
+			<h1 class="contacts__title title">Контакты</h1>
+			<div class="contacts__grid">
+				<div class="contacts__column">
+					<h2>Юридический адрес:</h2>
+					<p>160012, г. Вологда, Советский пр-т, 135-а</p>
+					<a href="tel:+78172757455">7 (8172) 75-74-55</a>
+					<a href="mailto:company@vologdalen.ru">company@vologdalen.ru</a>
+				</div>
+				<div class="contacts__column">
+					<h2>Адрес офисов в Москве</h2>
+					<p>г. Москва, м. «Коломенская», ТЦ «1000 вещей», павильон №18, ул. Судостроительная, д. 1</p>
+					<p>г. Москва, м. «Бабушкинская», ТК «Бабушкинский», павильон №6, ул. Менжинского, д. 36 </p>
+					<p>г. Москва, м. "Семеновская", Магазин " Московские товары"</p>
+					<p>Измайловский вал, 20, строение 1</p>
+				</div>
+				<div class="contacts__column">
+					<h2>Дистрибьютор в Москве </h2>
+					<p>PR-менеджер бренда Нерум - Екатерина Ястребова </p>
+					<a href="tel:+79266092333">+7 (926) 609-23-33</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	@@include('ss.html')
+</main>
+@@include('footer.html')
