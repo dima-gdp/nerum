@@ -18,7 +18,6 @@
 	}
 	// .cart__list
 	&__list {
-		margin-bottom: 84px;
 	}
 	// .cart__item
 	&__item {
@@ -160,34 +159,7 @@
 		}
 	}
 }
-.bot-cart {
-	// .bot-cart__row
-	&__row {
-		display: flex;
-		justify-content: space-between;
-		&:not(:last-child) {
-			margin-bottom: 20px;
-		}
-		// .bot-cart__row--sum
-		&:last-child {
-			margin-top: 30px;
-			padding-top: 30px;
-			border-top: 1px solid #e5e5e5;
-		}
-	}
-	// .bot-cart__text
-	&__text {
-		margin-right: 30px;
-		font-size: 16px;
-		line-height: lh(20, 16);
-	}
-	// .bot-cart__price
-	&__price {
-		font-weight: 700;
-		font-size: 16px;
-		line-height: lh(20, 16);
-	}
-}
+
 .form-cart {
 	// .form-cart__title
 	&__title {
