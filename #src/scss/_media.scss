@@ -113,8 +113,11 @@
 	.info-product__live {
 		@include adaptiv(margin-bottom, 57, 20, 1440, 768);
 	}
-	.info-product__color {
-		@include adaptiv(margin-bottom, 92, 20, 1440, 768);
+	// .info-product__color {
+	// 	@include adaptiv(margin-bottom, 92, 20, 1440, 768);
+	// }
+	.info-product .card__prices {
+		@include adaptiv(margin-bottom, 56, 20, 1440, 768);
 	}
 	.info-product__quantity {
 		@include adaptiv(margin-bottom, 66, 25, 1440, 768);
@@ -473,6 +476,12 @@
 	.slider-mid__wrapper .card__title {
 		font-size: 15px;
 	}
+	.slider-mid__wrapper .card__old-price {
+		font-size: 13px;
+	}
+	.slider-mid__wrapper .card__new-price {
+		font-size: 15px;
+	}
 	.slider-mid__wrapper .card__type {
 		font-size: 13px;
 	}
@@ -552,6 +561,13 @@
 	.catalog__grid .card__title {
 		font-size: 16px;
 	}
+	.catalog__grid .card__old-price {
+		font-size: 13px;
+	}
+	.catalog__grid .card__new-price {
+		font-size: 15px;
+	}
+
 	.form-cart__title {
 		font-size: 19px;
 	}
@@ -803,6 +819,12 @@
 	.catalog__grid .card__title {
 		font-size: 16px;
 	}
+	.catalog__grid .card__old-price {
+		font-size: 13px;
+	}
+	.catalog__grid .card__new-price {
+		font-size: 15px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -880,6 +902,13 @@
 	.card__title {
 		@include adaptiv(font-size, 18, 13, 768, 370);
 	}
+
+	.card__new-price {
+		@include adaptiv(font-size, 16, 12, 768, 370);
+	}
+	.card__old-price {
+		@include adaptiv(font-size, 14, 12, 768, 370);
+	}
 	.slider-hero__title {
 		padding: 20px 15px;
 		@include adaptiv(font-size, 18, 13, 768, 370);
@@ -905,6 +934,12 @@
 	.slider-mid__wrapper .card__title {
 		@include adaptiv(font-size, 18, 13, 768, 370);
 	}
+	.slider-mid__wrapper .card__old-price {
+		@include adaptiv(font-size, 14, 11, 768, 370);
+	}
+	.slider-mid__wrapper .card__new-price {
+		@include adaptiv(font-size, 16, 11, 768, 370);
+	}
 	.slider-mid__wrapper .card__type {
 		font-size: 14px;
 	}
@@ -929,6 +964,10 @@
 	.info-product__color {
 		margin-bottom: 20px;
 	}
+	.info-product .card__prices {
+		margin-bottom: 20px;
+	}
+
 	.info-product__quantity {
 		margin-bottom: 25px;
 	}
@@ -1643,6 +1682,24 @@
 	.card__title {
 		font-size: 15px;
 	}
+	.slider-mid__wrapper .card__title {
+		font-size: 14px;
+	}
+
+	.card__old-price {
+		font-size: 14px;
+	}
+	.card__new-price {
+		font-size: 16px;
+	}
+
+	.slider-mid__wrapper .card__old-price {
+		font-size: 14px;
+	}
+	.slider-mid__wrapper .card__new-price {
+		font-size: 16px;
+	}
+
 	.slider-hero__title {
 		font-size: 17px;
 	}
