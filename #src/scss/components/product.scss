@@ -195,7 +195,6 @@
 	align-items: center;
 	font-size: 16px;
 	line-height: lh(20, 16);
-	cursor: pointer;
 
 	&:not(:last-child) {
 		margin-right: 20px;
@@ -214,7 +213,6 @@
 		margin-bottom: 9px;
 		background: #ffffff;
 		border: 1px solid #2b2a29;
-		cursor: pointer;
 
 		&::before {
 			content: "";

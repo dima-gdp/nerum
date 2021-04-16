@@ -112,6 +112,10 @@
 		&:hover {
 			color: #c5a995;
 		}
+
+		&--active {
+			color: #c5a995;
+		}
 	}
 
 	&--active {
@@ -135,6 +139,7 @@
 		font-size: 16px;
 		line-height: lh(22, 16);
 		color: #000000;
+		background: #fff;
 		position: relative;
 		z-index: 2;
 	}
@@ -232,6 +237,44 @@
 		visibility: visible;
 		opacity: 1;
 		transform: none;
+	}
+	&__buttons {
+		display: flex;
+		align-items: center;
+		@media (max-width: 369px) {
+			justify-content: space-between;
+		}
+	}
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		padding: 10px 20px;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #ffffff;
+		transition: all 0.3s;
+		cursor: pointer;
+		@media (max-width: 369px) {
+			font-size: 12px;
+		}
+	}
+	&__filter {
+		background: #c5a995;
+		margin-right: 40px;
+		@media (max-width: 369px) {
+			margin-right: 20px;
+		}
+		&:hover {
+			background: #8290a7;
+		}
+	}
+	&__reset {
+		background: #8290a7;
+		&:hover {
+			background: #c5a995;
+		}
 	}
 }
 

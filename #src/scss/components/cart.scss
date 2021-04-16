@@ -45,6 +45,22 @@
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
+		@media (max-width: 768px) {
+			.card__new-price {
+				font-size: 16px;
+			}
+			.card__old-price {
+				font-size: 14px;
+			}
+		}
+		@media (max-width: 370px) {
+			.card__new-price {
+				font-size: 15px;
+			}
+			.card__old-price {
+				font-size: 13px;
+			}
+		}
 	}
 	// .item-cart__image
 	&__image {

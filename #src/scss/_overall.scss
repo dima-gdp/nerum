@@ -48,6 +48,10 @@ body {
 	display: block;
 }
 
+.alertify-notifier {
+	z-index: 99997;
+}
+
 .btn-brown {
 	display: flex;
 	align-items: center;

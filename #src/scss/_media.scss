@@ -371,11 +371,12 @@
 	}
 	.tabs-best__link {
 		font-size: 13px;
+		padding: 10px 14px;
 	}
 	.tabs-best__item {
 		margin-right: 15px;
 		margin-bottom: 12px;
-		padding: 10px 14px;
+
 		min-height: 37px;
 	}
 	.decor-about__text {
@@ -677,6 +678,17 @@
 		height: 48px;
 		font-size: 16px;
 	}
+	.search-page-form {
+		&__input {
+			flex: 1 1 auto;
+			min-height: 48px;
+			font-size: 15px;
+		}
+		&__submit {
+			height: 48px;
+			font-size: 16px;
+		}
+	}
 	.product__slider {
 		margin-right: 30px;
 		max-width: 40%;
@@ -809,6 +821,11 @@
 	.payment-cart__item {
 		flex: 0 0 33%;
 	}
+	.search-page {
+		.catalog__grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
 }
 
 @media (max-width: 860px) and (min-width: 769px) {
@@ -931,6 +948,12 @@
 	.form-header__input {
 		flex: 0 0 340px;
 	}
+	.search-page-form {
+		&__input {
+			flex: 1 1 auto;
+		}
+	}
+
 	.slider-mid__wrapper .card__title {
 		@include adaptiv(font-size, 18, 13, 768, 370);
 	}
@@ -1059,6 +1082,11 @@
 	.payment-cart__item {
 		flex: 0 0 50%;
 	}
+	.search-page {
+		.catalog__grid {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
 }
 
 @media (max-width: 650px) and (min-width: 470px) {
@@ -1079,6 +1107,10 @@
 }
 
 @media (max-width: 576px) {
+	.header__form {
+		padding: 30px 0;
+	}
+
 	.header__tel {
 		display: none;
 	}
@@ -1135,11 +1167,11 @@
 	}
 	.tabs-best__link {
 		font-size: 11px;
+		padding: 10px 14px;
 	}
 	.tabs-best__item {
 		margin-right: 10px;
 		margin-bottom: 10px;
-		padding: 10px 14px;
 		min-height: 36px;
 	}
 	.decor-about__text {
@@ -1161,6 +1193,21 @@
 		flex: 0 0 auto;
 		width: 300px;
 	}
+	.search-page-form {
+		flex-direction: column;
+		margin-bottom: 20px;
+		&__input {
+			flex: 0 0 auto;
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+		&__submit {
+			flex: 0 0 auto;
+			width: 280px;
+		}
+	}
+
 	.comments-product__top {
 		flex-direction: column;
 	}
@@ -1481,11 +1528,12 @@
 	}
 	.tabs-best__link {
 		font-size: 10px;
+		padding: 6px 10px;
 	}
 	.tabs-best__item {
 		margin-right: 10px;
 		margin-bottom: 8px;
-		padding: 6px 10px;
+
 		min-height: 30px;
 	}
 	.about__link {
@@ -1726,6 +1774,11 @@
 	}
 	.catalog__grid {
 		grid-template-columns: 1fr;
+	}
+	.search-page {
+		.catalog__grid {
+			grid-template-columns: 1fr;
+		}
 	}
 	.card__to-cart {
 		width: 100px;
